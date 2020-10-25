@@ -1,0 +1,12 @@
+body {
+    background-color: #ECEFF1;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+    text-shadow: 1px 1px #bbb;
+}
+
+code {
+    background: white;
+}
