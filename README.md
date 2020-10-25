@@ -4,9 +4,14 @@ Written in Markdown. Transpiled with Node.
 
 ## Build
 
-```shell
-make
-```
+Transform the Markdown into HTML and wrap it into a standalone document.
+
+* Get [Node](https://nodejs.org/)
+
+* Build
+    ```shell
+    make
+    ```
 
 ## Misc
 
