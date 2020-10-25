@@ -1,5 +1,7 @@
 # Loic Vourch - Software Engineer
 
+## Links
+
 * [💼 LinkedIn](https://www.linkedin.com/in/loicvourch/)
 * [💻 GitHub](https://github.com/VeryBadFrags)
 * [📝 Blog](https://www.verybadfrags.com)
@@ -10,7 +12,7 @@
     * [🦊 Renard (Text-based puzzle-adventure prototype)](https://verybadfrags.itch.io/renard)
 * [🎵 Music](https://www.youtube.com/channel/UCWRocYB0ymy1A3p2a_VQAAg)
 
----
+## Contact
 
 ✉️ contact at domain
 
@@ -40,3 +42,5 @@ Link to this page
 █████████████████████████████████
 █████████████████████████████████
 ```
+
+[Page source code](https://github.com/VeryBadFrags/personal-website)

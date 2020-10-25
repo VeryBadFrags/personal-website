@@ -1,6 +1,5 @@
 # Personal website
 
-My personal website.
 Written in Markdown. Transpiled with Node.
 
 ## Build
@@ -16,3 +15,7 @@ QR Code:
 ```shell
 echo "https://loic.vour.ch" | curl -F-=\<- qrenco.de
 ```
+
+## License
+
+MIT
