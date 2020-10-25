@@ -4,11 +4,30 @@ body {
 
 h1 {
   border-bottom: 1px solid #b0bec5;
-  text-shadow: 1px 1px #b0bec5;
+  text-shadow: 1px 1px rgba(0, 0, 0, 0.3);
+}
+
+h2 {
+  margin-left: 0.5em;
+}
+
+hr {
+  background-color: #b0bec5;
+  border: 0;
+  height: 4px;
+  margin: 24px 0;
 }
 
 ul {
-    font-size: 18px;
+  font-size: 18px;
+}
+
+p {
+  margin-left: 1.25em;
+}
+
+pre {
+  margin-left: 1.5em;
 }
 
 a {
@@ -17,13 +36,6 @@ a {
 
 a:hover {
   text-decoration: underline;
-}
-
-hr {
-  background-color: #b0bec5;
-  border: 0;
-  height: 0.25em;
-  margin: 24px 0;
 }
 
 code {
