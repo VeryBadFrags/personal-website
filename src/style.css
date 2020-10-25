@@ -22,6 +22,10 @@ ul {
   font-size: 18px;
 }
 
+li {
+  margin-bottom: 0.25em;
+}
+
 p {
   margin-left: 1.25em;
 }
