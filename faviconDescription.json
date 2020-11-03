@@ -35,7 +35,7 @@
 		},
 		"androidChrome": {
 			"pictureAspect": "noChange",
-			"themeColor": "#ffffff",
+			"themeColor": "#2b5797",
 			"manifest": {
 				"name": "Loic Vourch",
 				"display": "browser",
