@@ -4,7 +4,7 @@ const wrapperPath = "build/wrapper.html";
 const inputContentPath = "build/content.html";
 const contentTag = "<!-- Content -->";
 
-const outputPath = "build/index.html";
+const outputPath = "build/bundled.html";
 
 // Get Wrapper
 let wrapperHtml = fs.readFileSync(wrapperPath).toString();
