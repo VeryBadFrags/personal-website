@@ -14,7 +14,7 @@
 
 ## Contact
 
-✉️ contact at domain
+✉️ <contact@vour.ch>
 
 [PGP Public Key](loic_vourch_97E49997_public.asc)
 
@@ -43,4 +43,6 @@ Link to this page
 █████████████████████████████████
 ```
 
-[Page source code](https://github.com/VeryBadFrags/personal-website)
+[🐙 Source on GitHub](https://github.com/VeryBadFrags/personal-website)
+
+<small>Favicon: [uxwing.com](https://uxwing.com)</small>
