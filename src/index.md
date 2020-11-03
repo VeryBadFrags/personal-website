@@ -45,4 +45,4 @@ Link to this page
 
 [🐙 Source on GitHub](https://github.com/VeryBadFrags/personal-website)
 
-<small>Favicon: [uxwing.com](https://uxwing.com)</small>
+<small>Favicon by <a href="https://uxwing.com/" target="_blank" rel="noopener noreferrer">UXWing</a></small>

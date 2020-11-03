@@ -1,4 +1,4 @@
-dist/index.html: build/index.html dist/ dist/style.css dist/loic_vourch_97E49997_public.asc dist/favicon.ico package.json
+dist/index.html: build/index.html dist/ dist/style.css dist/loic_vourch_97E49997_public.asc build/faviconData.json package.json
 	npm run html-minifier
 
 dist/loic_vourch_97E49997_public.asc: assets/loic_vourch_97E49997_public.asc dist/
