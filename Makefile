@@ -1,4 +1,4 @@
-dist/index.html: build/bundled.html dist/ dist/style.css dist/loic_vourch_97E49997_public.asc dist/favicon.svg build/faviconData.json package.json
+dist/index.html: build/bundled.html dist/ dist/style.css dist/loic_vourch_97E49997_public.asc build/faviconData.json package.json
 	npm run html-minifier
 
 build/bundled.html: build/ build/content.html build/wrapper.html
@@ -15,9 +15,6 @@ dist/loic_vourch_97E49997_public.asc: assets/loic_vourch_97E49997_public.asc dis
 
 dist/style.css: src/style.css
 	cp src/style.css dist/style.css
-
-dist/favicon.svg: assets/programmer.svg
-	cp assets/programmer.svg dist/favicon.svg
 
 build/faviconData.json: faviconDescription.json assets/programmer.svg package.json
 	npm run favicon-generate
