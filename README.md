@@ -11,14 +11,6 @@ Generates a single-page website from Markdown.
     make
     ```
 
-## Misc
-
-QR Code:
-
-```shell
-echo "https://loic.vour.ch" | curl -F-=\<- qrenco.de
-```
-
 ## License
 
 MIT
