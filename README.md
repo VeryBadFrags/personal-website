@@ -1,10 +1,8 @@
 # Personal website
 
-Written in Markdown. Transpiled with Node.
+Generates a single-page website from Markdown.
 
 ## Build
-
-Transform the Markdown into HTML and wrap it into a standalone document.
 
 * Get [Node](https://nodejs.org/)
 

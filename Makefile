@@ -24,8 +24,8 @@ dist/loic_vourch_97E49997_public.asc: assets/loic_vourch_97E49997_public.asc dis
 	cp assets/loic_vourch_97E49997_public.asc dist/loic_vourch_97E49997_public.asc
 
 # Add Stylesheet
-dist/style.css: src/style.css
-	cp src/style.css dist/style.css
+dist/style.css: src/style.scss node_modules/ package.json
+	npm run sass
 
 # Generate favicons
 build/faviconData.json: faviconDescription.json assets/programmer.svg package.json
