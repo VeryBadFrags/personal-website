@@ -14,3 +14,7 @@ Generates a single-page website from Markdown.
 ## License
 
 MIT
+
+## Sources
+
+Favicon by [UXWing](https://uxwing.com/)

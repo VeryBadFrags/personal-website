@@ -25,5 +25,3 @@ Fingerprint: `0618 88F5 487E 27EC E503 C583 302C 7E47 97E4 9997`
 [🐙 Source on GitHub](https://github.com/VeryBadFrags/personal-website)
 
 <img src="qr.svg" alt="QR Code to this page" width="256"/>
-
-<small>Favicon by <a href="https://uxwing.com/" target="_blank" rel="noopener noreferrer">UXWing</a></small>
