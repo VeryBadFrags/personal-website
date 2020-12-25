@@ -8,7 +8,7 @@ NODE_DEPS = package.json node_modules/
 
 # Generate all the output files
 .PHONY: generate
-generate: ${DIST}/index.html ${DIST}/style.css ${DIST}/qr.svg ${DIST}/loic_vourch_97E49997_public.asc
+generate: ${DIST}/index.html ${DIST}/style.css ${DIST}/main.js ${DIST}/qr.svg ${DIST}/loic_vourch_97E49997_public.asc
 	@echo 'Generated site into: ${DIST}/'
 
 # Minify HTML
@@ -34,6 +34,11 @@ ${BUILD}/faviconData.json: faviconDescription.json ${ASSETS}/programmer.svg ${NO
 # Add Stylesheet
 ${DIST}/style.css: ${SRC}/style.scss ${NODE_DEPS}
 	npm run sass
+
+# JS
+# TODO run Babel here
+${DIST}/main.js: ${SRC}/main.js
+	cp ${SRC}/main.js ${DIST}/main.js
 
 # Generate QR code
 ${DIST}/qr.svg: ${DIST} ${NODE_DEPS}
