@@ -3,14 +3,18 @@
 ## Links
 
 * [💼 LinkedIn](https://www.linkedin.com/in/loicvourch/)
-* [💻 GitHub](https://github.com/VeryBadFrags)
-* [📝 Blog](https://www.verybadfrags.com)
-* [📷 Instagram](https://www.instagram.com/loicvourch/)
+* [🐙 GitHub](https://github.com/VeryBadFrags)
 * [👾 Games](https://games.verybadfrags.com/)
     * [🐺 Offline Werewolf](https://wolf.verybadfrags.com)
-    * [🕵️ Offline Spyfall](https://spy.verybadfrags.com)
+    * [🕵️ Spyfall](https://spy.verybadfrags.com)
+    * [📵🕵️ Offline Spyfall](https://offlinespy.verybadfrags.com)
     * [🦊 Renard](https://verybadfrags.itch.io/renard)
+    * [🧱 Blocks](https://blocks.verybadfrags.com)
+* [📝 Blog](https://www.verybadfrags.com)
+* [📷 Instagram](https://www.instagram.com/loicvourch/)
 * [🎵 Music](https://www.youtube.com/channel/UCWRocYB0ymy1A3p2a_VQAAg)
+
+<br>
 
 ## Contact
 
