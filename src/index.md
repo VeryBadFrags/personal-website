@@ -7,10 +7,10 @@
 * [👾 Games](https://games.verybadfrags.com/)
     * [🐺 Offline Werewolf](https://wolf.verybadfrags.com)
     * [🕵️ Spyfall](https://spy.verybadfrags.com)
-    * [📵🕵️ Offline Spyfall](https://offlinespy.verybadfrags.com)
+    * [📵🕵️ Offline Spyfall](https://offline-spy.verybadfrags.com)
     * [🦊 Renard](https://verybadfrags.itch.io/renard)
     * [🧱 Blocks](https://blocks.verybadfrags.com)
-* [📝 Blog](https://www.verybadfrags.com)
+* [📝 Blog](https://blog.verybadfrags.com)
 * [📷 Instagram](https://www.instagram.com/loicvourch/)
 * [🎵 Music](https://www.youtube.com/channel/UCWRocYB0ymy1A3p2a_VQAAg)
 
