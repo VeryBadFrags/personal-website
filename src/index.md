@@ -1,3 +1,9 @@
+---
+title: Loic Vourch - Software Engineer
+output:
+  html_document:
+    css: "style.css"
+---
 # Loic Vourch - Software Engineer
 
 ## Links

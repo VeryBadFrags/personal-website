@@ -1,24 +1,15 @@
 {
   "private": true,
   "scripts": {
-    "dev": "watch 'make' src/",
-    "test": "npm run favicon-check",
-    "favicon-generate": "real-favicon generate faviconDescription.json build/faviconData.json dist",
-    "favicon-inject": "real-favicon inject build/faviconData.json build src/wrapper.html",
-    "favicon-check": "real-favicon check-for-update --fail-on-update build/faviconData.json",
-    "html-minifier": "html-minifier build/bundled.html -o dist/index.html --collapse-whitespace --remove-comments --use-short-doctype --minify-css true",
-    "marked": "marked -o build/content.html -i src/index.md --mangle",
-    "qrcode": "qrcode -o dist/qr.svg https://loic.vour.ch --qzone 2",
-    "sass": "node-sass --no-source-map src/style.scss dist/style.css --output-style compressed"
+    "dev": "snowpack dev",
+    "build": "snowpack build && npm run qrcode",
+    "qrcode": "qrcode -o build/qr.svg https://loic.vour.ch --qzone 2"
   },
   "dependencies": {
-    "cli-real-favicon": "0.0.8",
-    "html-minifier": "^4.0.0",
-    "marked": "^1.2.2",
-    "node-sass": "^5.0.0",
-    "qrcode": "^1.4.4"
-  },
-  "devDependencies": {
-    "watch": "^1.0.2"
+    "@snowpack/plugin-optimize": "^0.2.13",
+    "@snowpack/plugin-sass": "^1.3.0",
+    "qrcode": "^1.4.4",
+    "snowpack": "^3.0.11",
+    "snowpack-plugin-markdown-html": "0.0.3"
   }
 }
