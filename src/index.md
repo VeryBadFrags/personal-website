@@ -4,21 +4,22 @@ output:
   html_document:
     css: "style.css"
 ---
+
 # Loic Vourch - Software Engineer
 
 ## Links
 
-* [💼 LinkedIn](https://www.linkedin.com/in/loicvourch/)
-* [🐙 GitHub](https://github.com/VeryBadFrags)
-* [👾 Games](https://games.verybadfrags.com/)
-    * [🐺 Offline Werewolf](https://wolf.verybadfrags.com)
-    * [🕵️ Spyfall](https://spy.verybadfrags.com)
-    * [📵🕵️ Offline Spyfall](https://offline-spy.verybadfrags.com)
-    * [🦊 Renard](https://verybadfrags.itch.io/renard)
-    * [🧱 Blocks](https://blocks.verybadfrags.com)
-* [📝 Blog](https://blog.verybadfrags.com)
-* [📷 Instagram](https://www.instagram.com/loicvourch/)
-* [🎵 Music](https://www.youtube.com/channel/UCWRocYB0ymy1A3p2a_VQAAg)
+- [💼 LinkedIn](https://www.linkedin.com/in/loicvourch/)
+- [🐙 GitHub](https://github.com/VeryBadFrags)
+- [👾 Games](https://games.verybadfrags.com/)
+  - [🕵️ Spyfall](https://spy.verybadfrags.com)
+  - [🐺 Offline Werewolf](https://wolf.verybadfrags.com)
+  - [📵🕵️ Offline Spyfall](https://offline-spy.verybadfrags.com)
+  - [🦊 Renard](https://verybadfrags.itch.io/renard)
+  - [🧱 Blocks](https://blocks.verybadfrags.com)
+- [📝 Blog](https://blog.verybadfrags.com)
+- [📷 Instagram](https://www.instagram.com/loicvourch/)
+- [🎵 Music](https://www.youtube.com/channel/UCWRocYB0ymy1A3p2a_VQAAg)
 
 <br>
 
