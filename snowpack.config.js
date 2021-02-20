@@ -18,6 +18,7 @@ function getHTMLWrapper(frontmatter, html) {
   ${html}
   </div>
   <script src="main.js"></script>
+  <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
 </body>
 </html>`;
 }
