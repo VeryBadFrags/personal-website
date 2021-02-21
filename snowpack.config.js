@@ -6,7 +6,6 @@ module.exports = {
   mount: {
     src: { url: "/" },
     assets: { url: "/", static: true },
-    "node_modules/materialize-css/dist/css": { url: "/", static: true },
   },
   plugins: [
     [
