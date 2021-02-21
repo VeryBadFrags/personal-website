@@ -1,63 +1,58 @@
-$textColor: #ECEFF1;
-$linkColor: #DCEDC8;
-$backgroundColor: rgba(13, 17, 63, 1);
+$bgColor1: #094257;
+$textColor: #fffcff;
+$linkColor: #f7c6b4;
 
 body {
-  background-color: $backgroundColor;
+  background-color: $bgColor1;
   color: $textColor;
-  margin:0;
-  padding:0;
   font-family: Arial, Helvetica, sans-serif;
-  height: 100vh;
 }
 
 h1 {
   border-bottom: 1px solid #b0bec5;
-  text-shadow: 1px 1px rgba(0, 0, 0, 0.7);
-}
-
-h2 {
-  margin-left: 0.25em;
-  text-shadow: 1px 1px rgba(0, 0, 0, 0.3);
-}
-
-hr {
-  background-color: #b0bec5;
-  border: 0;
-  height: 2px;
-  margin: 1.5em 0.5em;
-}
-
-ul {
-  font-size: 18px;
-  list-style: none;
-  margin-bottom: 0.6em;
-}
-
-li {
-  font-size: 1.1em;
-  margin-bottom: 0.75em;
-}
-
-p, img {
-  margin-left: 1.25em;
 }
 
 a {
-  color: $linkColor;
-  text-decoration: none;
 }
 
-a:hover {
-  text-decoration: underline;
-}
-
-.container {
-  margin: 0;
-  padding: 1em;
+.collection {
+  font-size: 1.3em;
 }
 
 // Override Font Awesome colors
 .fa-js {
-  color: yellow;
+  color: #f0db4f;
+}
+
+.fa-user-secret {
+  color: #1a237e;
+}
+
+.fa-github {
+  color: #000;
+}
+
+.fa-linkedin {
+  color: #006192;
+  background-color: #fff;
+  padding: 2px 1px 1px 2px;
+}
+
+.fa-instagram {
+  background: linear-gradient(
+    45deg,
+    #f09433 0%,
+    #e6683c 25%,
+    #dc2743 50%,
+    #cc2366 75%,
+    #bc1888 100%
+  );
+  color: white;
+  padding: 1px 1px 1px 2px;
+}
+
+.fa-youtube {
+  color: #ff0000;
+  background-color: #fff;
+  padding: 0px 0px 0px 1px;
 }

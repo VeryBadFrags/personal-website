@@ -1,5 +1,5 @@
-const startColor = [13, 17, 63];
-const endColor = [0, 0, 0];
+const startColor = [9, 66, 87];
+const endColor = [7, 48, 63];
 
 document.body.style.backgroundColor = `rgba(${startColor[0]}, ${startColor[1]}, ${startColor[2]}, 1)`;
 
