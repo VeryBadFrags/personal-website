@@ -1,22 +1,9 @@
-$bgColor1: #094257;
-$textColor: #fffcff;
-$linkColor: #f7c6b4;
-
-body {
-  background-color: $bgColor1;
-  color: $textColor;
-  font-family: Arial, Helvetica, sans-serif;
-}
 
 h1 {
   border-bottom: 1px solid #b0bec5;
 }
 
-.collection {
-  font-size: 1.3em;
-}
-
-.card-content > p {
+.card-header {
   font-size: 1.1em;
 }
 
