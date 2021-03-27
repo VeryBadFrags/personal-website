@@ -7,7 +7,9 @@ export default function Card({ content }) {
         <div className="card-header">{parse(content.title)}</div>
         <div className="card-body">
           {content.body.map((element, index) => (
-            <p key={index}>{parse(element)}</p>
+            <p class="card-text" key={index}>
+              {parse(element)}
+            </p>
           ))}
         </div>
         <CardFooter content={content} />
@@ -18,22 +20,20 @@ export default function Card({ content }) {
 
 function CardFooter({ content }) {
   return (
-    <div className="card-footer">
+    <div className="card-footer d-flex justify-content-between">
       <ul className="list-group list-group-horizontal justify-content-center">
         {content.links.map((link, index) => (
           <li className="list-group-item" key={index}>
             {parse(link)}
           </li>
         ))}
-        {content.badge ? (
-          <li className="list-group-item">
-            <img
-              alt="MIT License"
-              src="https://img.shields.io/badge/license-MIT-green"
-            />
-          </li>
-        ) : null}
       </ul>
+      {content.badge ? (
+        <img
+          alt="MIT License"
+          src="https://img.shields.io/badge/license-MIT-green"
+        />
+      ) : null}
     </div>
   );
 }
