@@ -5,9 +5,9 @@ const content = {
     '(<i class="fab fa-react" aria-hidden="true"></i> React, Socket.IO)',
   ],
   links: [
-    '<a href="https://spy.verybadfrags.com"><i class="fas fa-play-circle"></i> Play the game</a>',
-    '<a href="https://github.com/VeryBadFrags/online-spy-client" target="_blank" rel="noopener noreferrer"><i class="fas fa-code"></i> Client source code</a>',
-    '<a href="https://github.com/VeryBadFrags/online-spy-server" target="_blank" rel="noopener noreferrer"><i class="fas fa-code"></i> Server source code</a>',
+    '<a href="https://spy.verybadfrags.com" class="stretched-link"><i class="fas fa-play-circle"></i> Play the game</a>',
+    '<a href="https://github.com/VeryBadFrags/online-spy-client" class="stretched-link" target="_blank" rel="noopener noreferrer"><i class="fas fa-code"></i> Client source code</a>',
+    '<a href="https://github.com/VeryBadFrags/online-spy-server" class="stretched-link" target="_blank" rel="noopener noreferrer"><i class="fas fa-code"></i> Server source code</a>',
   ],
   badge: true
 };

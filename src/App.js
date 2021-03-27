@@ -5,14 +5,14 @@ import Contact from "./Contact";
 function App() {
   return (
     <div className="container">
-      <h1 className="text-light mb-4">Loic Vourch - Software Engineer</h1>
+      <h1 className="text-white mb-4">Loic Vourch - Software Engineer</h1>
 
       <Links />
 
       <Games />
 
       <hr />
-      
+
       <Contact />
 
       <Footer />
@@ -22,8 +22,8 @@ function App() {
 
 function Links() {
   return (
-    <div className="mb-4">
-      <h2 className="text-light">
+    <div className="mb-5">
+      <h2 className="text-white">
         <i className="fas fa-link"></i> Links
       </h2>
 
@@ -32,7 +32,7 @@ function Links() {
           href="https://www.linkedin.com/in/loicvourch/"
           target="_blank"
           rel="noopener noreferrer"
-          className="list-group-item list-group-item-action"
+          className="list-group-item list-group-item-action text-white bg-dark"
         >
           <i className="fab fa-linkedin"></i> LinkedIn
         </a>
@@ -40,7 +40,7 @@ function Links() {
           href="https://github.com/VeryBadFrags"
           target="_blank"
           rel="noopener noreferrer"
-          className="list-group-item list-group-item-action"
+          className="list-group-item list-group-item-action text-white bg-dark"
         >
           <i className="fab fa-github"></i> GitHub
         </a>
@@ -48,7 +48,7 @@ function Links() {
           href="https://blog.verybadfrags.com"
           target="_blank"
           rel="noopener noreferrer"
-          className="list-group-item list-group-item-action"
+          className="list-group-item list-group-item-action text-white bg-dark"
         >
           <i className="far fa-newspaper"></i> Blog
         </a>
@@ -56,7 +56,7 @@ function Links() {
           href="https://www.instagram.com/loicvourch/"
           target="_blank"
           rel="noopener noreferrer"
-          className="list-group-item list-group-item-action"
+          className="list-group-item list-group-item-action text-white bg-dark"
         >
           <i className="fab fa-instagram"></i> Instagram
         </a>
@@ -64,7 +64,7 @@ function Links() {
           href="https://www.youtube.com/channel/UCWRocYB0ymy1A3p2a_VQAAg"
           target="_blank"
           rel="noopener noreferrer"
-          className="list-group-item list-group-item-action"
+          className="list-group-item list-group-item-action text-white bg-dark"
         >
           <i className="fab fa-youtube"></i> Music
         </a>

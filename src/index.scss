@@ -8,8 +8,23 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+    color: rgb(218, 70, 143);
 }
 
 hr {
   color: #fff;
+}
+
+a {
+  color: rgb(35, 148, 253);
+}
+
+a:hover {
+  color: rgb(85, 169, 247);
+}
+
+// Bootstrap
+
+.bg-dark {
+  background-color: rgb(24, 26, 27) !important;
 }

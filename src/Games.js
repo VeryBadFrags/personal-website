@@ -7,8 +7,8 @@ import Blocks from "./content/blocks";
 
 function Games() {
   return (
-    <div className="mb-3">
-      <h2 className="text-light">
+    <div className="mb-5">
+      <h2 className="text-white">
         <i className="fas fa-gamepad"></i> Games
       </h2>
 

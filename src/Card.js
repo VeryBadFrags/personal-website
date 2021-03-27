@@ -3,7 +3,7 @@ import parse from "html-react-parser";
 export default function Card({ content }) {
   return (
     <div className="col mb-4">
-      <div className="card">
+      <div className="card text-white bg-dark">
         <div className="card-header">{parse(content.title)}</div>
         <div className="card-body">
           {content.body.map((element, index) => (
@@ -23,7 +23,7 @@ function CardFooter({ content }) {
     <div className="card-footer d-flex justify-content-between">
       <ul className="list-group list-group-horizontal justify-content-center">
         {content.links.map((link, index) => (
-          <li className="list-group-item" key={index}>
+          <li className="list-group-item text-white bg-dark" key={index}>
             {parse(link)}
           </li>
         ))}
