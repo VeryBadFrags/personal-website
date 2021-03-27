@@ -1,15 +1,18 @@
 import "./App.scss";
 import Games from "./Games";
+import Contact from "./Contact";
 
 function App() {
   return (
     <div className="container">
-      <h1 className="mb-4">Loic Vourch - Software Engineer</h1>
+      <h1 className="text-light mb-4">Loic Vourch - Software Engineer</h1>
 
       <Links />
 
       <Games />
+
       <hr />
+      
       <Contact />
 
       <Footer />
@@ -70,37 +73,7 @@ function Links() {
   );
 }
 
-function Contact() {
-  return (
-    <div className="row row-cols-1 row-cols-xl-2 mb-4">
-      <div className="col">
-        <div className="card border-primary">
-          <div className="card-header">
-            <i className="fas fa-address-book"></i> Contact
-          </div>
-          <div className="card-body">
-            <p>
-              <i className="far fa-envelope"></i>{" "}
-              <a href="mailto:contact@vour.ch">contact@vour.ch</a>
-            </p>
-            <p>
-              <i className="fas fa-lock"></i>{" "}
-              <a href="loic_vourch_97E49997_public.asc">PGP Public Key</a>
-            </p>
-            <p>
-              <i className="fas fa-fingerprint"></i>{" "}
-              <code>0618 88F5 487E 27EC E503 C583 302C 7E47 97E4 9997</code>
-            </p>
-          </div>
-        </div>
-      </div>
 
-      <div class="col d-flex justify-content-center">
-        <img src="qr.svg" alt="QR Code to this page" width="256" />
-      </div>
-    </div>
-  );
-}
 
 function Footer() {
   return (
