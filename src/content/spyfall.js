@@ -1,14 +1,13 @@
 const content = {
-  icons: ["fas fa-user-secret"],
-  title: "Spyfall",
+  title: "<i class='fas fa-user-secret'></i> Spyfall",
   body: [
     "A social-deduction game playable online with your friends. Inspired by Spyfall (designed by Alexander Ushan).",
-    '(<i className="fab fa-react" aria-hidden="true"></i> React, Socket.IO)',
+    '(<i class="fab fa-react" aria-hidden="true"></i> React, Socket.IO)',
   ],
   links: [
-    {url:"https://spy.verybadfrags.com", icon:"fas fa-play-circle", text:"Play the game"},
-    {url: "https://github.com/VeryBadFrags/online-spy-client", icon: "fas fa-code", text:"Client source code"},
-    {url: "https://github.com/VeryBadFrags/online-spy-server", icon:"fas fa-code", text:"Server source code"},
+    '<a href="https://spy.verybadfrags.com"><i class="fas fa-play-circle"></i> Play the game</a>',
+    '<a href="https://github.com/VeryBadFrags/online-spy-client" target="_blank" rel="noopener noreferrer"><i class="fas fa-code"></i> Client source code</a>',
+    '<a href="https://github.com/VeryBadFrags/online-spy-server" target="_blank" rel="noopener noreferrer"><i class="fas fa-code"></i> Server source code</a>',
   ],
   badge: true
 };
