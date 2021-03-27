@@ -6,10 +6,9 @@
 ## Build
 
 * Install [Node](https://nodejs.org/)
-
-* Build
+* Install dependencies
     ```sh
-    make
+    npm i
     ```
 
 ## Local development
