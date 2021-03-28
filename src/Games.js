@@ -1,3 +1,4 @@
+import React from "react";
 import Card from "./Card";
 import Spyfall from "./content/spyfall";
 import Renard from "./content/renard";

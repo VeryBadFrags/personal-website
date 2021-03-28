@@ -1,3 +1,4 @@
+import React from "react";
 import "./App.scss";
 import Links from "./Links";
 import Games from "./Games";

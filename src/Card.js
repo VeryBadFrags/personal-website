@@ -1,3 +1,4 @@
+import React from "react";
 import parse from "html-react-parser";
 
 export default function Card({ content }) {
@@ -7,7 +8,7 @@ export default function Card({ content }) {
         <div className="card-header">{parse(content.title)}</div>
         <div className="card-body">
           {content.body.map((element, index) => (
-            <p class="card-text" key={index}>
+            <p className="card-text" key={index}>
               {parse(element)}
             </p>
           ))}
