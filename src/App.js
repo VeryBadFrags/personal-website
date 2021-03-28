@@ -20,13 +20,11 @@ function App() {
 
 function Footer() {
   return (
-    <>
-      <p>
-        <a href="https://github.com/VeryBadFrags/personal-website">
-          <i className="fas fa-code"></i> Source code for this page
-        </a>
-      </p>
-    </>
+    <p>
+      <a href="https://github.com/VeryBadFrags/personal-website">
+        <i className="fas fa-code"></i> Source code for this page
+      </a>
+    </p>
   );
 }
 
