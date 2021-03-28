@@ -1,4 +1,5 @@
 import React from "react";
+import parse from "html-react-parser";
 
 function Links() {
   return (
@@ -8,49 +9,43 @@ function Links() {
       </h2>
 
       <div className="list-group">
-        <a
-          href="https://www.linkedin.com/in/loicvourch/"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="list-group-item list-group-item-action text-white bg-dark"
-        >
-          <i className="fab fa-linkedin"></i> LinkedIn
-        </a>
-        <a
-          href="https://github.com/VeryBadFrags"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="list-group-item list-group-item-action text-white bg-dark"
-        >
-          <i className="fab fa-github"></i> GitHub
-        </a>
-        <a
-          href="https://blog.verybadfrags.com"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="list-group-item list-group-item-action text-white bg-dark"
-        >
-          <i className="far fa-newspaper"></i> Blog
-        </a>
-        <a
-          href="https://www.instagram.com/loicvourch/"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="list-group-item list-group-item-action text-white bg-dark"
-        >
-          <i className="fab fa-instagram"></i> Instagram
-        </a>
-        <a
-          href="https://www.youtube.com/channel/UCWRocYB0ymy1A3p2a_VQAAg"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="list-group-item list-group-item-action text-white bg-dark"
-        >
-          <i className="fab fa-youtube"></i> Music
-        </a>
+        {linksList.map((link, index) => (
+          <a
+            href={link.url}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="list-group-item list-group-item-action text-white bg-dark"
+            key={index}
+          >
+            {parse(link.text)}
+          </a>
+        ))}
       </div>
     </div>
   );
 }
+
+const linksList = [
+  {
+    url: "https://www.linkedin.com/in/loicvourch/",
+    text: '<i class="fab fa-linkedin"></i> LinkedIn',
+  },
+  {
+    url: "https://github.com/VeryBadFrags",
+    text: '<i class="fab fa-github"></i> GitHub',
+  },
+  {
+    url: "https://blog.verybadfrags.com",
+    text: '<i class="far fa-newspaper"></i> Blog',
+  },
+  {
+    url: "https://www.instagram.com/loicvourch/",
+    text: '<i class="fab fa-instagram"></i> Instagram',
+  },
+  {
+    url: "https://www.youtube.com/channel/UCWRocYB0ymy1A3p2a_VQAAg",
+    text: '<i class="fab fa-youtube"></i> Music',
+  },
+];
 
 export default Links;
