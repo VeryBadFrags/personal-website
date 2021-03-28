@@ -29,10 +29,13 @@ function CardFooter({ content }) {
         ))}
       </ul>
       {content.badge ? (
-        <img
-          alt="MIT License"
-          src="https://img.shields.io/badge/license-MIT-green"
-        />
+        <span className="align-bottom">
+          <img
+            alt="MIT License"
+            src="https://img.shields.io/badge/license-MIT-green"
+            className="align-bottom"
+          />
+        </span>
       ) : null}
     </div>
   );
