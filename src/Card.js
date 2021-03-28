@@ -5,7 +5,18 @@ export default function Card({ content }) {
   return (
     <div className="col mb-4">
       <div className="card text-white bg-dark">
-        <div className="card-header">{parse(content.title)}</div>
+        <div className="card-header d-flex justify-content-between">
+          <div>{parse(content.title)}</div>
+          {content.badge ? (
+            <div>
+              <img
+                alt="MIT License"
+                src="https://img.shields.io/badge/license-MIT-green"
+                className="shadow"
+              />
+            </div>
+          ) : null}
+        </div>
         <div className="card-body">
           {content.body.map((element, index) => (
             <p className="card-text" key={index}>
@@ -21,22 +32,12 @@ export default function Card({ content }) {
 
 function CardFooter({ content }) {
   return (
-    <div className="card-footer d-flex justify-content-between">
-      <ul className="list-group list-group-horizontal justify-content-center">
-        {content.links.map((link, index) => (
-          <li className="list-group-item text-white bg-dark" key={index}>
-            {parse(link)}
-          </li>
-        ))}
-      </ul>
-      {content.badge ? (
-        <div className="d-flex align-items-center">
-          <img
-            alt="MIT License"
-            src="https://img.shields.io/badge/license-MIT-green"
-          />
-        </div>
-      ) : null}
-    </div>
+    <ul className="list-group list-group-flush">
+      {content.links.map((link, index) => (
+        <li className="list-group-item list-group-item-action text-white bg-dark" key={index}>
+          {parse(link)}
+        </li>
+      ))}
+    </ul>
   );
 }
