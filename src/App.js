@@ -7,7 +7,7 @@ import Contact from "./Contact";
 function App() {
   return (
     <div className="container">
-      <h1 className="text-white pt-1 mb-4">Loic Vourch - Software Engineer</h1>
+      <h1 className="text-white pt-2 mb-5">Loic Vourch - Software Engineer</h1>
 
       <Links />
       <Games />
