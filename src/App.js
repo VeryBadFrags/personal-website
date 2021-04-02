@@ -33,8 +33,7 @@ function Footer() {
   return (
     <p>
       <a href="https://github.com/VeryBadFrags/personal-website">
-        <i className="fas fa-code"></i> Source code for this page
-      </a>
+        <i className="fas fa-code"></i> Source code</a>
     </p>
   );
 }
