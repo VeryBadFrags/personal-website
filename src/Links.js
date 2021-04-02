@@ -3,7 +3,7 @@ import parse from "html-react-parser";
 
 function Links() {
   return (
-    <div className="mb-5">
+    <>
       <h2 className="text-white">
         <i className="fas fa-link"></i> Links
       </h2>
@@ -21,7 +21,7 @@ function Links() {
           </a>
         ))}
       </div>
-    </div>
+    </>
   );
 }
 

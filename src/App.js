@@ -3,16 +3,27 @@ import "./App.scss";
 import Links from "./Links";
 import Games from "./Games";
 import Contact from "./Contact";
+import Section from "./Section";
 
 function App() {
   return (
     <div className="container">
-      <h1 className="text-white pt-2 mb-5">Loic Vourch - Software Engineer</h1>
+      <h1 className="text-white pt-2 mb-4">Loic Vourch - Software Engineer</h1>
 
-      <Links />
-      <Games />
-      <hr />
-      <Contact />
+      <Section>
+        <Links />
+      </Section>
+
+      <Section>
+        <Games />
+      </Section>
+
+      <hr className="my-4" />
+
+      <Section>
+        <Contact />
+      </Section>
+
       <Footer />
     </div>
   );

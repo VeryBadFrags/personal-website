@@ -3,7 +3,7 @@ import parse from "html-react-parser";
 
 export default function Card({ content }) {
   return (
-    <div className="col mb-4">
+    <div className="col">
       <div className="card text-white bg-dark">
         <div className="card-header d-flex justify-content-between">
           <div>{parse(content.title)}</div>

@@ -8,25 +8,22 @@ import Blocks from "./content/blocks";
 
 function Games() {
   return (
-    <div className="mb-5">
+    <>
       <h2 className="text-white">
         <i className="fas fa-gamepad"></i> Games
       </h2>
 
-      <div className="row">
+      <div className="row mb-4">
         <Card content={Spyfall} />
       </div>
 
-      <div className="row row-cols-1 row-cols-lg-2">
+      <div className="row row-cols-1 row-cols-lg-2 gy-4">
         <Card content={Renard} />
-
         <Card content={OfflineWolf} />
-
         <Card content={OfflineSpyfall} />
-
         <Card content={Blocks} />
       </div>
-    </div>
+    </>
   );
 }
 
