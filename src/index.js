@@ -1,8 +1,11 @@
+import 'bootstrap/dist/css/bootstrap.min.css';
+import "./index.scss";
 import React from "react";
 import { hydrate, render } from "react-dom";
-import "./index.scss";
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
+
+
 
 const rootElement = document.getElementById("root");
 if (rootElement.hasChildNodes()) {
