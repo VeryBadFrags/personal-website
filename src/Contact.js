@@ -26,7 +26,12 @@ function Contact() {
       </div>
 
       <div className="col d-flex justify-content-center">
-        <img src="qr.svg" alt="QR Code to this page" height="256" />
+        <figure>
+          <img src="qr.svg" alt="QR Code to this page" height="256" />
+          <figcaption className="text-light text-center">
+            Link to this page
+          </figcaption>
+        </figure>
       </div>
     </div>
   );
