@@ -23,8 +23,8 @@ if (rootElement.hasChildNodes()) {
 reportWebVitals();
 
 // Dynamic background
-const startColor = [9, 66, 87];
-const endColor = [7, 48, 63];
+const startColor = [76, 86, 106]; // #4C566A nord1
+const endColor = [67, 76, 94]; // #434C5E nord0
 
 document.body.style.backgroundColor = `rgba(${startColor[0]}, ${startColor[1]}, ${startColor[2]}, 1)`;
 

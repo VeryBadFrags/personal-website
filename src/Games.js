@@ -9,7 +9,7 @@ import Blocks from "./content/blocks";
 function Games() {
   return (
     <>
-      <h2 className="text-white">
+      <h2>
         <i className="fas fa-gamepad"></i> Games
       </h2>
 

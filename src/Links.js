@@ -4,7 +4,7 @@ import parse from "html-react-parser";
 function Links() {
   return (
     <>
-      <h2 className="text-white">
+      <h2>
         <i className="fas fa-link"></i> Links
       </h2>
 
@@ -14,7 +14,7 @@ function Links() {
             href={link.url}
             target="_blank"
             rel="noopener noreferrer"
-            className="list-group-item list-group-item-action text-white bg-dark"
+            className="list-group-item list-group-item-action bg-dark"
             key={index}
           >
             {parse(link.text)}

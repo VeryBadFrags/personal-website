@@ -32,4 +32,5 @@ Feel free to re-use this template.
 ## Links
 
 * [Create React App](https://create-react-app.dev)
-* Favicon by [UXWing](https://uxwing.com/)
+* Theme: [Nord](https://www.nordtheme.com)
+* Favicon: [UXWing](https://uxwing.com/)

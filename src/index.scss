@@ -1,34 +1,83 @@
-$bgColor1: #094257;
+// Nord
+$nord0: #2E3440;
+$nord1: #3B4252;
+$nord2: #434C5E;
+$nord3: #4C566A;
+
+$nord4: #D8DEE9;
+$nord5: #E5E9F0;
+$nord6: #ECEFF4;
+
+$nord7: #8FBCBB;
+$nord8: #88C0D0;
+$nord9: #81A1C1;
+$nord10: #5E81AC;
+
+$nord11: #BF616A;
+$nord12: #D08770;
+$nord13: #EBCB8B;
+$nord14: #A3BE8C;
+$nord15: #B48EAD;
+// end Nord
+
+$bgColor1: $nord3;
+$cardHeaderBgColor: $nord1;
+$cardBgColor: $nord0;
+
+$textColor: $nord6;
+$headingColor: $nord6;
+$hrColor: $nord4;
+
+$linkColor: $nord9;
+$linkColorHover: $nord10;
+$listLinkColor: $nord8;
+$listLinkColorHover: $nord9;
+$codeColor: $nord14;
 
 body {
   background-color: $bgColor1;
+  color: $textColor;
   font-family: sans-serif;
+  font-size: 1.05em;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
-  color: #da468f;
+  color: $codeColor;
 }
 
 hr {
-  color: #fff;
+  color: $hrColor;
 }
 
 a {
-  color: #2394fd;
+  color: $linkColor;
 }
 
 a:hover {
-  color: #55a9f7;
+  color: $linkColorHover;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: $headingColor;
 }
 
 // Bootstrap
 
+.list-group-item {
+  color: $listLinkColor;
+}
+
+.list-group-item:hover {
+  color: $listLinkColorHover;
+}
+
 .bg-dark {
-  background-color: rgb(34, 38, 46) !important;
+  background-color: $cardBgColor !important;
 }
 
 .card-header {
-  background-color: rgb(70, 79, 96);
+  background-color: $cardHeaderBgColor;
+  font-size: 1.1em;
 }

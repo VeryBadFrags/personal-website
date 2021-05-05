@@ -3,10 +3,6 @@ h1 {
   border-bottom: 1px solid #b0bec5;
 }
 
-.card-header {
-  font-size: 1.1em;
-}
-
 // Override Font Awesome colors
 .fa-js {
   color: #f0db4f;
@@ -26,6 +22,10 @@ h1 {
   color: #006192;
   background-color: #fff;
   padding: 2px 2px 1px 2px;
+}
+
+.fa-newspaper {
+  color: #fff;
 }
 
 .fa-instagram {

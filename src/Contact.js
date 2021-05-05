@@ -4,7 +4,7 @@ function Contact() {
   return (
     <div className="row row-cols-1 row-cols-lg-2 gy-4 mb-4">
       <div className="col">
-        <div className="card text-white bg-dark">
+        <div className="card bg-dark">
           <div className="card-body">
             <h5 className="card-title">
               <i className="fas fa-address-book"></i> Contact
