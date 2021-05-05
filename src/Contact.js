@@ -4,7 +4,7 @@ function Contact() {
   return (
     <div className="row row-cols-1 row-cols-lg-2 gy-4 mb-4">
       <div className="col">
-        <div className="card bg-dark">
+        <div className="card">
           <div className="card-body">
             <h5 className="card-title">
               <i className="fas fa-address-book"></i> Contact
@@ -28,7 +28,7 @@ function Contact() {
       <div className="col d-flex justify-content-center">
         <figure>
           <img src="qr.svg" alt="QR Code to this page" height="256" />
-          <figcaption className="text-light text-center">
+          <figcaption className="text-center">
             Link to this page
           </figcaption>
         </figure>

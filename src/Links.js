@@ -14,7 +14,7 @@ function Links() {
             href={link.url}
             target="_blank"
             rel="noopener noreferrer"
-            className="list-group-item list-group-item-action bg-dark"
+            className="list-group-item list-group-item-action"
             key={index}
           >
             {parse(link.text)}
