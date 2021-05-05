@@ -1,21 +1,21 @@
 @import "node_modules/nord/src/sass/nord.scss";
 
-$bgColor1: $nord3;
+$bgColor: $nord3;
 $cardHeaderBgColor: $nord1;
 $cardBgColor: $nord0;
 
 $textColor: $nord6;
-$headingColor: $nord6;
+$headingColor: $nord5;
 $hrColor: $nord4;
 
 $linkColor: $nord9;
 $linkColorHover: $nord10;
 $listLinkColor: $nord6;
-$listLinkColorHover: $nord4;
-$codeColor: $nord14;
+$listLinkColorHover: $nord7;
+$codeColor: $nord13;
 
 body {
-  background-color: $bgColor1;
+  background-color: $bgColor;
   color: $textColor;
   font-family: sans-serif;
   font-size: 1.05em;
@@ -60,5 +60,6 @@ h1, h2, h3, h4, h5, h6 {
 
 .card-header {
   background-color: $cardHeaderBgColor;
+  color: $textColor;
   font-size: 1.1em;
 }

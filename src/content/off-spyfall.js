@@ -1,5 +1,5 @@
 const content = {
-  title: '📵<i class="fas fa-user-secret"></i> Offline Spyfall',
+  title: '<i class="fas fa-phone-slash"></i><i class="fas fa-user-secret"></i> Offline Spyfall',
   body: [
     "A server-free, standalone game inspired by Spyfall that can be played without an internet connection.",
     '(<i class="fab fa-js" aria-hidden="true"></i> JavaScript)',

@@ -26,7 +26,11 @@ function App() {
       </Section>
 
       <Footer />
-      <GithubCorner href="https://github.com/VeryBadFrags/personal-website" octoColor="#ECEFF4" bannerColor="#5E81AC" />
+      <GithubCorner
+        href="https://github.com/VeryBadFrags/personal-website"
+        octoColor="#ECEFF4" // nord6
+        bannerColor="#5E81AC" // nord10
+      />
     </div>
   );
 }
@@ -35,7 +39,8 @@ function Footer() {
   return (
     <p>
       <a href="https://github.com/VeryBadFrags/personal-website">
-        <i className="fas fa-code"></i> Source code</a>
+        <i className="fab fa-github"></i> Source code on GitHub
+      </a>
     </p>
   );
 }

@@ -4,14 +4,14 @@ import parse from "html-react-parser";
 export default function Card({ content }) {
   return (
     <div className="col">
-      <div className="card">
+      <div className="card shadow-sm">
         <div className="card-header d-flex justify-content-between">
           <div>{parse(content.title)}</div>
           {content.badge ? (
             <div>
               <img
                 alt="MIT License"
-                src="https://img.shields.io/badge/license-MIT-green"
+                src="https://img.shields.io/badge/license-MIT-a3be8c"
                 className="shadow"
               />
             </div>
