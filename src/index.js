@@ -23,8 +23,8 @@ if (rootElement.hasChildNodes()) {
 reportWebVitals();
 
 // Dynamic background
-const startColor = [76, 86, 106]; // #4C566A nord1
-const endColor = [67, 76, 94]; // #434C5E nord0
+const startColor = [76, 86, 106]; // #4C566A nord3
+const endColor = [59, 66, 82]; // #434C5E nord1
 
 document.body.style.backgroundColor = `rgba(${startColor[0]}, ${startColor[1]}, ${startColor[2]}, 1)`;
 
@@ -34,7 +34,7 @@ window.addEventListener("scroll", () => {
     document.documentElement.scrollHeight -
     document.documentElement.clientHeight;
   let scrolled = (winScroll / height) * 100;
-
+  
   let newColors = [];
   for (let i = 0; i < 3; i++) {
     newColors[i] =
