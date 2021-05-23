@@ -13,14 +13,6 @@ function Contact() {
               <i className="far fa-envelope"></i>{" "}
               <a href="mailto:contact@vour.ch">contact@vour.ch</a>
             </p>
-            <p className="card-text">
-              <i className="fas fa-lock"></i>{" "}
-              <a href="loic_vourch_97E49997_public.asc">PGP Public Key</a>
-            </p>
-            <p className="card-text">
-              <i className="fas fa-fingerprint"></i>{" "}
-              <code>0618 88F5 487E 27EC E503 C583 302C 7E47 97E4 9997</code>
-            </p>
           </div>
         </div>
       </div>
