@@ -3,25 +3,19 @@ import parse from "html-react-parser";
 
 function Links() {
   return (
-    <>
-      <h2>
-        <i className="fas fa-link"></i> Links
-      </h2>
-
-      <div className="list-group">
-        {linksList.map((link, index) => (
-          <a
-            href={link.url}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="list-group-item list-group-item-action"
-            key={index}
-          >
-            {parse(link.text)}
-          </a>
-        ))}
-      </div>
-    </>
+    <div className="list-group">
+      {linksList.map((link, index) => (
+        <a
+          href={link.url}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="list-group-item list-group-item-action"
+          key={index}
+        >
+          {parse(link.text)}
+        </a>
+      ))}
+    </div>
   );
 }
 

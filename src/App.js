@@ -11,11 +11,11 @@ function App() {
     <div className="container">
       <h1 className="pt-2 mb-4">Loic Vourch - Software Engineer</h1>
 
-      <Section>
+      <Section icon="fas fa-link" title="Links">
         <Links />
       </Section>
 
-      <Section>
+      <Section icon="fas fa-gamepad" title="Games">
         <Games />
       </Section>
 
