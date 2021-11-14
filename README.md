@@ -9,10 +9,13 @@ React app that serves static HTML using [react-snap](https://www.npmjs.com/packa
 
 * Install [Node](https://nodejs.org/)
 * Install dependencies
+
     ```sh
     npm i
     ```
+
 * Build
+
     ```sh
     npm run build
     ```
