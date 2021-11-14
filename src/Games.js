@@ -1,5 +1,6 @@
 import React from "react";
 import Card from "./Card";
+import Sand from "./content/sand";
 import Spyfall from "./content/spyfall";
 import Renard from "./content/renard";
 import OfflineWolf from "./content/off-wolf";
@@ -13,11 +14,9 @@ function Games() {
         <i className="fas fa-gamepad"></i> Games
       </h2>
 
-      <div className="row mb-4">
-        <Card content={Spyfall} />
-      </div>
-
       <div className="row row-cols-1 row-cols-lg-2 gy-4">
+        <Card content={Sand} />
+        <Card content={Spyfall} />
         <Card content={Renard} />
         <Card content={OfflineWolf} />
         <Card content={OfflineSpyfall} />
