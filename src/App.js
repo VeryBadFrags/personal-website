@@ -18,15 +18,11 @@ function App() {
         <Links />
       </Section>
 
-      <Divider />
-
       <Section icon="fas fa-gamepad" title="Games">
         <Games />
       </Section>
 
-      <Box mb="sm">
-        <Divider color="orange" />
-      </Box>
+      <Divider color="cyan" />
 
       <Section>
         <Contact />

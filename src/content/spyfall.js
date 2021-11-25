@@ -1,5 +1,6 @@
 const content = {
-  title: '<i class="fas fa-user-secret"></i> Spyfall',
+  icon: '<i class="fas fa-user-secret"></i>',
+  title: 'Spyfall',
   body: [
     "A social-deduction game playable online with your friends. Inspired by Spyfall (designed by Alexander Ushan).",
     '(<i class="fab fa-react" aria-hidden="true"></i> React, Socket.IO)',

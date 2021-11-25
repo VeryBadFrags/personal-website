@@ -1,5 +1,6 @@
 const content = {
-  title: '<i class="fas fa-paw"></i> Renard',
+  icon: '<i class="fas fa-paw"></i>',
+  title: 'Renard',
   body: [
     "A prototype for a terminal-based puzzle-adventure game.",
     '(<i class="fab fa-unity" aria-hidden="true"></i> Unity, C#)',

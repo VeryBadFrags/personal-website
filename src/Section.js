@@ -3,10 +3,10 @@ import React from "react";
 
 export default function Section({ icon, title, children }) {
   return (
-    <Box my="sm">
+    <Box my="lg">
       {title ? (
-        <Heading size="xl" color="cyanGreen" py="sm">
-          <i className={icon} /> {title}
+        <Heading as="h2" size="xl" color="pink" pb="sm">
+          <i className={icon} /> <span className="drac-text-pink-purple">{title}</span>
         </Heading>
       ) : null}
       {children}
