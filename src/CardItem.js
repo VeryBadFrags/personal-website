@@ -16,9 +16,13 @@ export default function CardItem({ content }) {
           </div>
         ) : null}
       </Box>
-      {content.body.map((element, index) => (
-        <Paragraph pb="sm" key={index}>{parse(element)}</Paragraph>
-      ))}
+      <Box m="xs">
+        {content.body.map((element, index) => (
+          <Paragraph pb="sm" key={index}>
+            {parse(element)}
+          </Paragraph>
+        ))}
+      </Box>
 
       <CardFooter content={content} />
     </Card>

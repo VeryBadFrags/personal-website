@@ -10,7 +10,7 @@ import { Box } from "@dracula/dracula-ui";
 
 function Games() {
   return (
-    <Box className="col-container">
+    <Box className="col-container" mt="sm">
       <CardItem content={Sand} />
       <CardItem content={Spyfall} />
       <CardItem content={Renard} />
