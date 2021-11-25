@@ -5,8 +5,8 @@ const content = {
     '(<i class="fab fa-js" aria-hidden="true"></i> JavaScript)',
   ],
   links: [
-    '<a href="https://offline-werewolf.verybadfrags.com" class="stretched-link"><i class="fas fa-play-circle"></i> Play the game</a>',
-    '<a href="https://github.com/VeryBadFrags/offline-werewolf" class="stretched-link" target="_blank" rel="noopener noreferrer"><i class="fas fa-code"></i> Source code</a>',
+    {url:"https://offline-werewolf.verybadfrags.com", text:'<i class="fas fa-play-circle"></i> Play the game'},
+    {url:"https://github.com/VeryBadFrags/offline-werewolf", text:'<i class="fas fa-code"></i> Source code'},
   ],
   badge: true,
 };

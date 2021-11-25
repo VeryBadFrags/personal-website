@@ -1,21 +1,25 @@
 import React from "react";
 import parse from "html-react-parser";
+import { Anchor, List } from "@dracula/dracula-ui";
 
 function Links() {
   return (
-    <div className="list-group">
+    <List>
       {linksList.map((link, index) => (
-        <a
+        <li key={index}>
+        <Anchor
           href={link.url}
+          color="purple" hoverColor="pink"
+          size="lg"
           target="_blank"
           rel="noopener noreferrer"
-          className="list-group-item list-group-item-action"
           key={index}
         >
           {parse(link.text)}
-        </a>
+        </Anchor>
+        </li>
       ))}
-    </div>
+    </List>
   );
 }
 
