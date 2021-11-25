@@ -5,7 +5,7 @@ import { Anchor, Box, Card, Heading, List, Paragraph } from "@dracula/dracula-ui
 
 export default function CardItem({ content }) {
   return (
-    <Card variant="subtle" color="orange" className="col-item" p="sm" mb="md" height="xs">
+    <Card variant="subtle" color="cyan" className="col-item" p="sm" mb="lg" height="xs">
       <Box display="flex" id="card-title">
         <Heading as="h3" color="cyan">
           {parse(content.icon)} <span className="drac-text-cyan-green">{content.title}</span>
@@ -17,8 +17,9 @@ export default function CardItem({ content }) {
         ) : null}
       </Box>
       {content.body.map((element, index) => (
-        <Paragraph key={index}>{parse(element)}</Paragraph>
+        <Paragraph pb="sm" key={index}>{parse(element)}</Paragraph>
       ))}
+
       <CardFooter content={content} />
     </Card>
   );
@@ -26,12 +27,12 @@ export default function CardItem({ content }) {
 
 function CardFooter({ content }) {
   return (
-    <List my="md">
+    <List>
       {content.links.map((link, index) => (
         <li key={index}>
           <Anchor
             href="${link.url}"
-            color="purple"
+            color="orange"
             hoverColor="pink"
             target="_blank"
             rel="noopener noreferrer"

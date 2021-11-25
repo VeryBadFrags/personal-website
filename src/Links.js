@@ -17,7 +17,7 @@ function Links() {
             key={index}
           >
             {parse(link.icon)}{" "}
-            <Text color="yellowPink" size="lg">
+            <Text color="yellowPink" hoverColor="pink" size="lg">
               {link.text}
             </Text>
           </Anchor>

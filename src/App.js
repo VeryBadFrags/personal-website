@@ -9,7 +9,7 @@ import Section from "./Section";
 
 function App() {
   return (
-    <Box p="md">
+    <Box p="sm">
       <Heading as="h1" size="2xl" color="purpleCyan">
         Loic Vourch - Software Engineer
       </Heading>
