@@ -4,7 +4,6 @@ import Links from "./Links";
 import Games from "./Games";
 import Contact from "./Contact";
 import Section from "./Section";
-import GithubCorner from "react-github-corner";
 
 function App() {
   return (
@@ -26,11 +25,6 @@ function App() {
       </Section>
 
       <Footer />
-      <GithubCorner
-        href="https://github.com/VeryBadFrags/personal-website"
-        octoColor="#ECEFF4" // nord6
-        bannerColor="#5E81AC" // nord10
-      />
     </div>
   );
 }
@@ -38,9 +32,6 @@ function App() {
 function Footer() {
   return (
     <p>
-      <a href="https://github.com/VeryBadFrags/personal-website">
-        <i className="fab fa-github"></i> Source code on GitHub
-      </a>
     </p>
   );
 }
