@@ -4,8 +4,8 @@ import { Anchor, Box, Card, Heading, Text } from "@dracula/dracula-ui";
 
 function Contact() {
   return (
-    <Box>
-      <Card color="purpleCyan" p="sm" mb="lg" width="sm">
+    <Box className="col-container">
+      <Card color="purpleCyan" p="sm" mb="lg" className="col-item">
         <Heading as="h3">
           <i className="fas fa-address-book" /> Contact
         </Heading>
@@ -16,7 +16,7 @@ function Contact() {
         </Box>
       </Card>
 
-      <Box as="figure" align="center">
+      <Box as="figure" align="center" className="col-item">
         <img src="qr.svg" alt="QR Code to this page" height="256" />
         <Text as="figcaption">Link to this page</Text>
       </Box>
