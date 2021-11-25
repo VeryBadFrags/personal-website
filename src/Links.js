@@ -9,7 +9,7 @@ function Links() {
         <li key={index}>
         <Anchor
           href={link.url}
-          color="purple" hoverColor="pink"
+          color="purple" hoverColor="cyan"
           size="lg"
           target="_blank"
           rel="noopener noreferrer"

@@ -1,31 +1,28 @@
 import React from "react";
-import { Box, Card } from "@dracula/dracula-ui";
+import { Anchor, Box, Card, Heading, Paragraph, Text } from "@dracula/dracula-ui";
 
 function Contact() {
   return (
-    <Box>
-      <div className="row row-cols-1 row-cols-lg-2 gy-4 mb-4">
-        <div className="col">
-          <Card color="purpleCyan">
-            <div className="card-body">
-              <h5 className="card-title">
-                <i className="fas fa-address-book"></i> Contact
-              </h5>
-              <p className="card-text">
-                <i className="far fa-envelope"></i>{" "}
-                <a href="mailto:contact@vour.ch">contact@vour.ch</a>
-              </p>
-            </div>
-          </Card>
-        </div>
+    <Box className="row row-cols-1 row-cols-lg-2 gy-4 mb-4">
+      <Card color="purpleCyan" p="sm" className="col">
+        <Heading as="h3" className="card-title">
+          <i className="fas fa-address-book"></i> Contact
+        </Heading>
+        <Paragraph m="sm">
+          <Anchor href="mailto:contact@vour.ch" color="cyanGreen" hoverColor="orange">
+            <i className="far fa-envelope"></i> contact@vour.ch
+          </Anchor>
+        </Paragraph>
+      </Card>
 
-        <div className="col d-flex justify-content-center">
-          <figure>
-            <img src="qr.svg" alt="QR Code to this page" height="256" />
-            <figcaption className="text-center">Link to this page</figcaption>
-          </figure>
-        </div>
-      </div>
+      <Box className="col d-flex justify-content-center">
+        <figure>
+          <img src="qr.svg" alt="QR Code to this page" height="256" />
+          <Text as="figcaption" className="text-center">
+            Link to this page
+          </Text>
+        </figure>
+      </Box>
     </Box>
   );
 }

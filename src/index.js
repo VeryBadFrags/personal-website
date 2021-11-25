@@ -1,4 +1,3 @@
-import 'bootstrap/dist/css/bootstrap.min.css';
 import "./index.scss";
 import React from "react";
 import { hydrate, render } from "react-dom";

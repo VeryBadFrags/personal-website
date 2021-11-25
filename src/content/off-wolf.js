@@ -5,8 +5,14 @@ const content = {
     '(<i class="fab fa-js" aria-hidden="true"></i> JavaScript)',
   ],
   links: [
-    {url:"https://offline-werewolf.verybadfrags.com", text:'<i class="fas fa-play-circle"></i> Play the game'},
-    {url:"https://github.com/VeryBadFrags/offline-werewolf", text:'<i class="fas fa-code"></i> Source code'},
+    {
+      url: "https://offline-werewolf.verybadfrags.com",
+      text: '<i class="fas fa-play-circle"></i> Play the game',
+    },
+    {
+      url: "https://github.com/VeryBadFrags/offline-werewolf",
+      text: '<i class="fas fa-code"></i> Source code',
+    },
   ],
   badge: true,
 };
