@@ -1,31 +1,26 @@
 import React from "react";
+import "./Contact.css";
+import { Anchor, Box, Card, Heading, Paragraph, Text } from "@dracula/dracula-ui";
 
 function Contact() {
   return (
-    <div className="row row-cols-1 row-cols-lg-2 gy-4 mb-4">
-      <div className="col">
-        <div className="card">
-          <div className="card-body">
-            <h5 className="card-title">
-              <i className="fas fa-address-book"></i> Contact
-            </h5>
-            <p className="card-text">
-              <i className="far fa-envelope"></i>{" "}
-              <a href="mailto:contact@vour.ch">contact@vour.ch</a>
-            </p>
-          </div>
-        </div>
-      </div>
+    <Box className="col-container">
+      <Card color="purpleCyan" p="sm" mb="lg" className="col-item">
+        <Heading as="h3">
+          <i className="fas fa-address-book" /> Contact
+        </Heading>
+        <Paragraph m="sm">
+          <Anchor href="mailto:contact@vour.ch" color="cyanGreen" hoverColor="orange">
+            <i className="far fa-envelope" /> contact@vour.ch
+          </Anchor>
+        </Paragraph>
+      </Card>
 
-      <div className="col d-flex justify-content-center">
-        <figure>
-          <img src="qr.svg" alt="QR Code to this page" height="256" />
-          <figcaption className="text-center">
-            Link to this page
-          </figcaption>
-        </figure>
-      </div>
-    </div>
+      <Box as="figure" align="center" className="col-item">
+        <img src="qr.svg" alt="QR Code to this page" height="256" />
+        <Text as="figcaption">Link to this page</Text>
+      </Box>
+    </Box>
   );
 }
 

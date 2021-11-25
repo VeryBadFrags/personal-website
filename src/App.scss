@@ -1,4 +1,3 @@
-
 h1 {
   border-bottom: 1px solid #b0bec5;
 }
@@ -33,9 +32,24 @@ h1 {
   padding: 1px 2px 1px 2px;
 }
 
+.fa-github {
+  color: #fff;
+}
+
 .fa-youtube {
   border-radius: 4px;
   color: #ff0000;
   background-color: #fff;
   padding: 0px 1px 0px 1px;
+}
+
+.col-container {
+  columns: 20em 2;
+  column-gap: 3em;
+}
+
+.col-item {
+  -webkit-column-break-inside: avoid;
+  page-break-inside: avoid;
+  break-inside: avoid;
 }

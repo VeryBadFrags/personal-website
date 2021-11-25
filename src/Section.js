@@ -1,14 +1,15 @@
+import { Box, Heading } from "@dracula/dracula-ui";
 import React from "react";
 
 export default function Section({ icon, title, children }) {
   return (
-    <div className="mb-5">
+    <Box my="lg">
       {title ? (
-        <h2 className="mb-3">
-          <i className={icon} /> {title}
-        </h2>
+        <Heading as="h2" size="xl" color="pink" pb="md">
+          <i className={icon} /> <span className="drac-text-pink-purple">{title}</span>
+        </Heading>
       ) : null}
       {children}
-    </div>
+    </Box>
   );
 }

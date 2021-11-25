@@ -1,44 +1,57 @@
 import React from "react";
 import parse from "html-react-parser";
+import { Anchor, List, Text } from "@dracula/dracula-ui";
 
 function Links() {
   return (
-    <div className="list-group">
+    <List>
       {linksList.map((link, index) => (
-        <a
-          href={link.url}
-          target="_blank"
-          rel="noopener noreferrer"
-          className="list-group-item list-group-item-action"
-          key={index}
-        >
-          {parse(link.text)}
-        </a>
+        <li key={index}>
+          <Anchor
+            href={link.url}
+            color="cyan"
+            hoverColor="purple"
+            size="lg"
+            target="_blank"
+            rel="noopener noreferrer"
+            key={index}
+          >
+            {parse(link.icon)}{" "}
+            <Text color="yellowPink" hoverColor="pink" size="lg">
+              {link.text}
+            </Text>
+          </Anchor>
+        </li>
       ))}
-    </div>
+    </List>
   );
 }
 
 const linksList = [
   {
     url: "https://www.linkedin.com/in/loicvourch/",
-    text: '<i class="fab fa-linkedin"></i> LinkedIn',
+    icon: '<i class="fab fa-linkedin"></i>',
+    text: "LinkedIn",
   },
   {
     url: "https://github.com/VeryBadFrags",
-    text: '<i class="fab fa-github"></i> GitHub',
+    icon: '<i class="fab fa-github"></i>',
+    text: "GitHub",
   },
   {
     url: "https://blog.verybadfrags.com",
-    text: '<i class="far fa-newspaper"></i> Blog',
+    icon: '<i class="far fa-newspaper"></i>',
+    text: "Blog",
   },
   {
     url: "https://www.instagram.com/loicvourch/",
-    text: '<i class="fab fa-instagram"></i> Instagram',
+    icon: '<i class="fab fa-instagram"></i>',
+    text: "Instagram",
   },
   {
     url: "https://www.youtube.com/channel/UCWRocYB0ymy1A3p2a_VQAAg",
-    text: '<i class="fab fa-youtube"></i> Music',
+    icon: '<i class="fab fa-youtube"></i>',
+    text: "Music",
   },
 ];
 

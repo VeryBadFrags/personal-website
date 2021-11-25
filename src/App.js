@@ -1,3 +1,5 @@
+import "@dracula/dracula-ui/styles/dracula-ui.css";
+import { Box, Divider, Heading } from "@dracula/dracula-ui";
 import React from "react";
 import "./App.scss";
 import Links from "./Links";
@@ -7,8 +9,10 @@ import Section from "./Section";
 
 function App() {
   return (
-    <div className="container">
-      <h1 className="pt-2 mb-4">Loic Vourch - Software Engineer</h1>
+    <Box p="sm">
+      <Heading as="h1" size="2xl" color="purpleCyan">
+        Loic Vourch - Software Engineer
+      </Heading>
 
       <Section icon="fas fa-link" title="Links">
         <Links />
@@ -18,22 +22,19 @@ function App() {
         <Games />
       </Section>
 
-      <hr className="my-4" />
+      <Divider color="cyan" />
 
       <Section>
         <Contact />
       </Section>
 
       <Footer />
-    </div>
+    </Box>
   );
 }
 
 function Footer() {
-  return (
-    <p>
-    </p>
-  );
+  return <Box></Box>;
 }
 
 export default App;
