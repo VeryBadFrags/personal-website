@@ -1,16 +1,17 @@
+import '@dracula/dracula-ui/styles/dracula-ui.css'
+import { Divider, Paragraph } from '@dracula/dracula-ui'
 import React from "react";
 import "./App.scss";
 import Links from "./Links";
 import Games from "./Games";
 import Contact from "./Contact";
 import Section from "./Section";
-import GithubCorner from "react-github-corner";
 
 function App() {
   return (
-    <div className="container">
+    <div className="container drac-bg-black">
       <h1 className="pt-2 mb-4">Loic Vourch - Software Engineer</h1>
-
+      <Paragraph color="black">Hello Vampire</Paragraph>
       <Section icon="fas fa-link" title="Links">
         <Links />
       </Section>
@@ -19,18 +20,13 @@ function App() {
         <Games />
       </Section>
 
-      <hr className="my-4" />
+      <Divider />
 
       <Section>
         <Contact />
       </Section>
 
       <Footer />
-      <GithubCorner
-        href="https://github.com/VeryBadFrags/personal-website"
-        octoColor="#ECEFF4" // nord6
-        bannerColor="#5E81AC" // nord10
-      />
     </div>
   );
 }
@@ -38,9 +34,6 @@ function App() {
 function Footer() {
   return (
     <p>
-      <a href="https://github.com/VeryBadFrags/personal-website">
-        <i className="fab fa-github"></i> Source code on GitHub
-      </a>
     </p>
   );
 }

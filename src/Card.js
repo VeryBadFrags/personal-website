@@ -1,12 +1,13 @@
 import React from "react";
 import parse from "html-react-parser";
+import { Box, Card, List, Text } from "@dracula/dracula-ui";
 
-export default function Card({ content }) {
+export default function CardItem({ content }) {
   return (
-    <div className="col">
-      <div className="card shadow-sm">
+    <Box>
+      <Card rounded="lg" color="purpleCyan" p="md">
         <div className="card-header d-flex justify-content-between">
-          <div>{parse(content.title)}</div>
+          <Text>{parse(content.title)}</Text>
           {content.badge ? (
             <div>
               <img
@@ -17,27 +18,27 @@ export default function Card({ content }) {
             </div>
           ) : null}
         </div>
-        <div className="card-body">
+        <Text>
           {content.body.map((element, index) => (
             <p className="card-text" key={index}>
               {parse(element)}
             </p>
           ))}
-        </div>
+        </Text>
         <CardFooter content={content} />
-      </div>
-    </div>
+      </Card>
+    </Box>
   );
 }
 
 function CardFooter({ content }) {
   return (
-    <ul className="list-group list-group-flush">
+    <List>
       {content.links.map((link, index) => (
-        <li className="list-group-item list-group-item-action" key={index}>
+        <li className="drac-text drac-text-white" key={index}>
           {parse(link)}
         </li>
       ))}
-    </ul>
+    </List>
   );
 }

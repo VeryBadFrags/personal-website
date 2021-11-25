@@ -31,35 +31,6 @@ hr {
   color: $hrColor;
 }
 
-a {
-  color: $linkColor;
-}
-
-a:hover {
-  color: $linkColorHover;
-}
-
 h1, h2, h3, h4, h5, h6 {
   color: $headingColor;
-}
-
-// Bootstrap
-
-.list-group-item {
-  background-color: $cardBgColor !important;
-  color: $listLinkColor;
-}
-
-.list-group-item:hover {
-  color: $listLinkColorHover;
-}
-
-.card {
-  background-color: $cardBgColor !important;
-}
-
-.card-header {
-  background-color: $cardHeaderBgColor;
-  color: $textColor;
-  font-size: 1.1em;
 }
