@@ -21,7 +21,7 @@ function CardHeader({ content }) {
       </Heading>
       {content.badge ? (
         <Box>
-          <img alt="MIT License" src="https://img.shields.io/badge/license-MIT-a3be8c" />
+          <img alt="MIT License" src="https://img.shields.io/badge/license-MIT-9580ff" />
         </Box>
       ) : null}
     </Box>
