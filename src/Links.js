@@ -1,6 +1,6 @@
 import React from "react";
 import parse from "html-react-parser";
-import { Anchor, List, Text } from "@dracula/dracula-ui";
+import { Anchor, List } from "@dracula/dracula-ui";
 
 function Links() {
   return (
@@ -9,17 +9,14 @@ function Links() {
         <li key={index}>
           <Anchor
             href={link.url}
-            color="cyan"
+            color="orange"
             hoverColor="purple"
             size="lg"
             target="_blank"
             rel="noopener noreferrer"
             key={index}
           >
-            {parse(link.icon)}{" "}
-            <Text color="yellowPink" hoverColor="pink" size="lg">
-              {link.text}
-            </Text>
+            {parse(link.icon)} {link.text}
           </Anchor>
         </li>
       ))}

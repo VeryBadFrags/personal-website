@@ -35,9 +35,9 @@ function CardFooter({ content }) {
       {content.links.map((link, index) => (
         <li key={index}>
           <Anchor
-            href="${link.url}"
+            href={link.url}
             color="orange"
-            hoverColor="pink"
+            hoverColor="purple"
             target="_blank"
             rel="noopener noreferrer"
           >
