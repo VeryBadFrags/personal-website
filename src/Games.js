@@ -1,10 +1,11 @@
 import React from "react";
+import Blocks from "./content/blocks";
 import CardItem from "./CardItem";
 import Sand from "./content/sand";
-import Spyfall from "./content/spyfall";
-import Renard from "./content/renard";
+import OfflineSpyfall from "./content/off-spyfall";
 import OfflineWolf from "./content/off-wolf";
-import Blocks from "./content/blocks";
+import Renard from "./content/renard";
+import Spyfall from "./content/spyfall";
 import { Box } from "@dracula/dracula-ui";
 
 function Games() {
@@ -14,6 +15,7 @@ function Games() {
       <CardItem content={Spyfall} />
       <CardItem content={Renard} />
       <CardItem content={Blocks} />
+      <CardItem content={OfflineSpyfall} />
       <CardItem content={OfflineWolf} />
     </Box>
   );
