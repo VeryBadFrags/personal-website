@@ -14,15 +14,15 @@ function App() {
         Loic Vourch - Software Engineer
       </Heading>
 
-      <Section icon="fas fa-link" title="Links">
+      <Section title="Links" icon="fas fa-link">
         <Links />
       </Section>
 
-      <Section icon="fas fa-gamepad" title="Games">
+      <Section title="Games" icon="fas fa-gamepad">
         <Games />
       </Section>
 
-      <Divider color="cyan" />
+      <Divider color="purple" />
 
       <Section>
         <Contact />

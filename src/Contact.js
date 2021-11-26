@@ -16,10 +16,16 @@ function Contact() {
         </Box>
       </Card>
 
-      <Box as="figure" align="center" className="col-item">
-        <img src="qr.svg" alt="QR Code to this page" height="256" />
-        <Text as="figcaption">Link to this page</Text>
-      </Box>
+      <QR />
+    </Box>
+  );
+}
+
+function QR() {
+  return (
+    <Box as="figure" align="center" className="col-item">
+      <img src="qr.svg" alt="QR Code to this page" height="256" />
+      <Text as="figcaption">Link to this page</Text>
     </Box>
   );
 }
