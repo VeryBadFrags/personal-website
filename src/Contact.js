@@ -1,5 +1,5 @@
 import React from "react";
-import "./Contact.css";
+import "./Contact.scss";
 import { Anchor, Box, Card, Heading, Text } from "@dracula/dracula-ui";
 
 function Contact() {
