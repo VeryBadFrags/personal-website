@@ -1,5 +1,5 @@
 :root {
-    --glowColor: rgba(127, 127, 127, 0.1);
+    --glowColor: hsla(0, 0%, 100%, 0.1);
 }
 
 #card-title {
