@@ -6,6 +6,7 @@ import Links from "./Links";
 import Games from "./Games";
 import Contact from "./Contact";
 import Section from "./Section";
+import { FaGamepad, FaLink } from 'react-icons/fa';
 
 function App() {
   return (
@@ -14,11 +15,11 @@ function App() {
         Loic Vourch - Software Engineer
       </Heading>
 
-      <Section title="Links" icon="fas fa-link">
+      <Section title="Links" icon={<FaLink />}>
         <Links />
       </Section>
 
-      <Section title="Games" icon="fas fa-gamepad">
+      <Section title="Games" icon={<FaGamepad />}>
         <Games />
       </Section>
 

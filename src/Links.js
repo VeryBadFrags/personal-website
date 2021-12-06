@@ -1,6 +1,6 @@
 import React from "react";
-import parse from "html-react-parser";
 import { Anchor, List } from "@dracula/dracula-ui";
+import { FaGithub, FaInstagram, FaLinkedin, FaNewspaper, FaYoutube } from 'react-icons/fa';
 
 function Links() {
   return (
@@ -16,7 +16,7 @@ function Links() {
             rel="noopener noreferrer"
             key={index}
           >
-            {parse(link.icon)} {link.text}
+            {link.icon} {link.text}
           </Anchor>
         </li>
       ))}
@@ -27,27 +27,27 @@ function Links() {
 const linksList = [
   {
     url: "https://www.linkedin.com/in/loicvourch/",
-    icon: '<i class="fab fa-linkedin"></i>',
+    icon: <FaLinkedin />,
     text: "LinkedIn",
   },
   {
     url: "https://github.com/VeryBadFrags",
-    icon: '<i class="fab fa-github"></i>',
+    icon: <FaGithub />,
     text: "GitHub",
   },
   {
     url: "https://blog.verybadfrags.com",
-    icon: '<i class="far fa-newspaper"></i>',
+    icon: <FaNewspaper />,
     text: "Blog",
   },
   {
     url: "https://www.instagram.com/loicvourch/",
-    icon: '<i class="fab fa-instagram"></i>',
+    icon: <FaInstagram />,
     text: "Instagram",
   },
   {
     url: "https://www.youtube.com/channel/UCWRocYB0ymy1A3p2a_VQAAg",
-    icon: '<i class="fab fa-youtube"></i>',
+    icon: <FaYoutube />,
     text: "Music",
   },
 ];

@@ -6,7 +6,7 @@ export default function Section({ icon, title, children }) {
     <Box my="lg">
       {title ? (
         <Heading as="h2" size="xl" color="pink">
-          <i className={icon} /> <span className="drac-text-pink-purple">{title}</span>
+          {icon} <span className="drac-text-pink-purple">{title}</span>
         </Heading>
       ) : null}
       {children}

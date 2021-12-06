@@ -1,17 +1,18 @@
 import React from "react";
 import "./Contact.scss";
 import { Anchor, Box, Card, Heading, Text } from "@dracula/dracula-ui";
+import { FaAddressBook, FaEnvelope } from 'react-icons/fa';
 
 function Contact() {
   return (
     <Box className="col-container">
       <Card color="purpleCyan" p="sm" mb="lg" className="col-item">
         <Heading as="h3">
-          <i className="fas fa-address-book" /> Contact
+          <FaAddressBook /> Contact
         </Heading>
         <Box m="sm">
           <Anchor href="mailto:contact@vour.ch" color="cyan" hoverColor="orange">
-            <i className="far fa-envelope" /> <Text color="cyanGreen">contact@vour.ch</Text>
+            <FaEnvelope /> <Text color="cyanGreen">contact@vour.ch</Text>
           </Anchor>
         </Box>
       </Card>
