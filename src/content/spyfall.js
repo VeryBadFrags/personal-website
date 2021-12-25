@@ -15,7 +15,7 @@ const content = {
       text: '<i class="fas fa-code"></i> Client source code',
     },
     {
-      url: "https://github.com/VeryBadFrags/online-spy-server",
+      url: "https://github.com/VeryBadFrags/spyfall-server",
       text: '<i class="fas fa-code"></i> Server source code',
     },
   ],
