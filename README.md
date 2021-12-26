@@ -1,24 +1,24 @@
 # Personal website
 
-![License: MIT](https://img.shields.io/badge/license-MIT-green)
 [![Netlify Status](https://api.netlify.com/api/v1/badges/9831630f-f8ce-4486-a2d7-eaa2d591f0ef/deploy-status)](https://app.netlify.com/sites/ecstatic-bell-8dfa14/deploys)
+![License: MIT](https://img.shields.io/badge/license-MIT-green)
 
 React app that serves static HTML using [react-snap](https://www.npmjs.com/package/react-snap).
 
 ## Build
 
-* Install [Node](https://nodejs.org/)
-* Install dependencies
+- Install [Node](https://nodejs.org/)
+- Install dependencies
 
-    ```sh
-    npm i
-    ```
+  ```sh
+  npm i
+  ```
 
-* Build
+- Build
 
-    ```sh
-    npm run build
-    ```
+  ```sh
+  npm run build
+  ```
 
 ## Local development
 
@@ -34,6 +34,6 @@ Feel free to re-use this template.
 
 ## Links
 
-* [Create React App](https://create-react-app.dev)
-* Theme: [Nord](https://www.nordtheme.com)
-* Favicon: [UXWing](https://uxwing.com/)
+- [Create React App](https://create-react-app.dev)
+- Theme: [Nord](https://www.nordtheme.com)
+- Favicon: [UXWing](https://uxwing.com/)
