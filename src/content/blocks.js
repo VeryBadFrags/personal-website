@@ -1,7 +1,7 @@
 const content = {
   icon: '<i class="fas fa-cubes"></i>',
-  title: 'Blocks',
-  body: ["That tetromino game.", '(<i class="fab fa-js" aria-hidden="true"></i> JavaScript)'],
+  title: "Blocks",
+  body: ["That tetromino game.", "(TypeScript)"],
   links: [
     {
       url: "https://blocks.verybadfrags.com",
