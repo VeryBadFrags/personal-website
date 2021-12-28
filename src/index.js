@@ -33,7 +33,7 @@ reportWebVitals();
 //     document.documentElement.scrollHeight -
 //     document.documentElement.clientHeight;
 //   let scrolled = (winScroll / height) * 100;
-  
+
 //   let newColors = [];
 //   for (let i = 0; i < 3; i++) {
 //     newColors[i] =

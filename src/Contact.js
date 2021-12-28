@@ -1,7 +1,7 @@
 import React from "react";
 import "./Contact.scss";
 import { Anchor, Box, Card, Heading, Text } from "@dracula/dracula-ui";
-import { FaAddressBook, FaEnvelope } from 'react-icons/fa';
+import { FaAddressBook, FaEnvelope } from "react-icons/fa";
 
 function Contact() {
   return (

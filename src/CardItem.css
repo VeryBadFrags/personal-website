@@ -1,7 +1,7 @@
 :root {
-    --glowColor: hsla(0, 0%, 100%, 0.1);
+  --glowColor: hsla(0, 0%, 100%, 0.1);
 }
 
 #card-title {
-    justify-content: space-between;
+  justify-content: space-between;
 }

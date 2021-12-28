@@ -1,6 +1,6 @@
 import React from "react";
 import { Anchor, List } from "@dracula/dracula-ui";
-import { FaGithub, FaInstagram, FaLinkedin, FaNewspaper, FaYoutube } from 'react-icons/fa';
+import { FaGithub, FaInstagram, FaLinkedin, FaNewspaper, FaYoutube } from "react-icons/fa";
 
 function Links() {
   return (
