@@ -19,7 +19,8 @@ module.exports = {
   },
   plugins: ["react"],
   rules: {
-    "no-console": 1,
-    "react/prop-types": [0],
+    "linebreak-style": ["error", "unix"],
+    semi: ["error", "always"],
+    "no-console": "error",
   },
 };
