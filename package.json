@@ -8,7 +8,7 @@
     "build": "react-scripts build && npm run build-static",
     "build-static": "react-snap",
     "clean": "rm -rf build/",
-    "test": "react-scripts test",
+    "test": "standard && react-scripts test",
     "eject": "react-scripts eject",
     "qrcode": "qrcode -o public/qr.svg https://loic.vour.ch --qzone 2"
   },
@@ -45,10 +45,7 @@
     "web-vitals": "^2.1.2"
   },
   "devDependencies": {
-    "eslint": "^7.32.0",
-    "eslint-config-prettier": "^8.3.0",
-    "eslint-plugin-react": "^7.28.0",
-    "prettier": "2.5.1",
-    "qrcode": "^1.4.4"
+    "qrcode": "^1.4.4",
+    "standard": "^16.0.4"
   }
 }
