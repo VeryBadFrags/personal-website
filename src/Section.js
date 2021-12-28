@@ -1,15 +1,17 @@
-import { Box, Heading } from "@dracula/dracula-ui";
-import React from "react";
+import { Box, Heading } from '@dracula/dracula-ui'
+import React from 'react'
 
-export default function Section({ icon, title, children }) {
+export default function Section ({ icon, title, children }) {
   return (
-    <Box id={`section-${title}`} my="lg">
-      {title ? (
-        <Heading as="h2" size="xl" color="purple">
-          {icon} <span className="drac-text-purple-cyan">{title}</span>
-        </Heading>
-      ) : null}
+    <Box id={`section-${title}`} my='lg'>
+      {title
+        ? (
+          <Heading as='h2' size='xl' color='purple'>
+            {icon} <span className='drac-text-purple-cyan'>{title}</span>
+          </Heading>
+          )
+        : null}
       {children}
     </Box>
-  );
+  )
 }
