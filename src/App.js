@@ -6,7 +6,7 @@ import Links from "./Links";
 import Games from "./Games";
 import Contact from "./Contact";
 import Section from "./Section";
-import { FaGamepad, FaLink } from 'react-icons/fa';
+import { FaGamepad, FaLink } from "react-icons/fa";
 
 function App() {
   return (
