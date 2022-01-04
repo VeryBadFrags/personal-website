@@ -1,6 +1,6 @@
 import React from 'react'
 import { Anchor, List } from '@dracula/dracula-ui'
-import { FaGithub, FaInstagram, FaLinkedin, FaNewspaper, FaYoutube } from 'react-icons/fa'
+import { FaGithub, FaLinkedin, FaNewspaper, FaYoutube } from 'react-icons/fa'
 
 function Links () {
   return (
@@ -39,11 +39,6 @@ const linksList = [
     url: 'https://blog.verybadfrags.com',
     icon: <FaNewspaper />,
     text: 'Blog'
-  },
-  {
-    url: 'https://www.instagram.com/loicvourch/',
-    icon: <FaInstagram />,
-    text: 'Instagram'
   },
   {
     url: 'https://www.youtube.com/channel/UCWRocYB0ymy1A3p2a_VQAAg',
