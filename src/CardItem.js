@@ -5,7 +5,7 @@ import { Anchor, Box, Card, Heading, List, Paragraph } from '@dracula/dracula-ui
 
 export default function CardItem ({ content }) {
   return (
-    <Card variant='subtle' color='cyan' className='col-item' p='sm' mb='lg' height='xs'>
+    <Card variant='subtle' color='cyan' borderColor='purple' className='col-item' p='sm' mb='lg' height='xs'>
       <CardHeader content={content} />
       <CardBody content={content} />
       <CardFooter content={content} />
