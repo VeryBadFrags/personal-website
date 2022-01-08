@@ -7,6 +7,7 @@
     "dev": "react-scripts start",
     "build": "react-scripts build && npm run build-static",
     "build-static": "react-snap",
+    "lint": "standard --fix",
     "clean": "rm -rf build/",
     "test": "standard && react-scripts test",
     "eject": "react-scripts eject",
