@@ -49,7 +49,7 @@ function CardFooter ({ content }) {
         <li key={index}>
           <Anchor
             href={link.url}
-            color='orange'
+            color='green'
             hoverColor='purple'
             target='_blank'
             rel='noopener noreferrer'

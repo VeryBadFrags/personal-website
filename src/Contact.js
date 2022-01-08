@@ -12,7 +12,7 @@ function Contact () {
         </Heading>
         <Box m='sm'>
           <Anchor href='mailto:contact@vour.ch' color='cyan' hoverColor='orange'>
-            <FaEnvelope /> <Text color='cyanGreen'>contact@vour.ch</Text>
+            <FaEnvelope /> <Text>contact@vour.ch</Text>
           </Anchor>
         </Box>
       </Card>
