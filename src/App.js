@@ -10,7 +10,7 @@ import { FaGamepad, FaLink } from 'react-icons/fa'
 
 function App () {
   return (
-    <Box p='sm'>
+    <Box px="lg" py='sm'>
       <Heading as='h1' size='2xl' color='purpleCyan'>
         Loic Vourch - Software Engineer
       </Heading>

@@ -28,14 +28,3 @@ h1 {
   background-color: #fff;
   padding: 0px 1px 0px 1px;
 }
-
-.col-container {
-  columns: 23em 2;
-  column-gap: 3em;
-}
-
-.col-item {
-  -webkit-column-break-inside: avoid;
-  page-break-inside: avoid;
-  break-inside: avoid;
-}

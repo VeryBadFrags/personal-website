@@ -3,7 +3,7 @@ import React from 'react'
 
 export default function Section ({ icon, title, children }) {
   return (
-    <Box id={`section-${title}`} my='lg'>
+    <Box id={`section-${title}`} my='md'>
       {title
         ? (
           <Heading as='h2' size='xl' color='purple'>

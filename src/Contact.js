@@ -5,8 +5,8 @@ import { FaAddressBook, FaEnvelope } from 'react-icons/fa'
 
 function Contact () {
   return (
-    <Box className='col-container'>
-      <Card color='purpleCyan' p='sm' mb='lg' className='col-item'>
+    <Box>
+      <Card color='purpleCyan' p='sm' mb='lg'>
         <Heading as='h3'>
           <FaAddressBook /> Contact
         </Heading>
@@ -24,7 +24,7 @@ function Contact () {
 
 function Qr () {
   return (
-    <Box as='figure' align='center' className='col-item'>
+    <Box as='figure' align='center'>
       <img src='qr.svg' alt='QR Code to this page' height='256' />
       <Text as='figcaption'>Link to this page</Text>
     </Box>
