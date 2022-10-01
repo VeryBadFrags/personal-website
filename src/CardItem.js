@@ -1,7 +1,7 @@
 import React from 'react'
 import parse from 'html-react-parser'
 import './CardItem.css'
-import { Anchor, Box, Card, Heading, List, Paragraph } from '@dracula/dracula-ui'
+import { Anchor, Box, Card, Heading, List, Paragraph } from 'dracula-ui'
 
 export default function CardItem ({ content }) {
   return (

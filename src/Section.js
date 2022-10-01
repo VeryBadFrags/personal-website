@@ -1,4 +1,4 @@
-import { Box, Heading } from '@dracula/dracula-ui'
+import { Box, Heading } from 'dracula-ui'
 import React from 'react'
 
 export default function Section ({ icon, title, children }) {

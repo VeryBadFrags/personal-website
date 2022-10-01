@@ -1,5 +1,5 @@
-import '@dracula/dracula-ui/styles/dracula-ui.css'
-import { Box, Divider, Heading } from '@dracula/dracula-ui'
+import 'dracula-ui/styles/dracula-ui.css'
+import { Box, Divider, Heading } from 'dracula-ui'
 import React from 'react'
 import './App.scss'
 import Links from './Links'
