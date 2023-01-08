@@ -1,0 +1,12 @@
+$md-width: 768px;
+$lg-width: 1024px;
+
+.games-container {
+  column-count: 1;
+}
+
+@media (min-width: $md-width) {
+  .games-container {
+    column-count: 2;
+  }
+}

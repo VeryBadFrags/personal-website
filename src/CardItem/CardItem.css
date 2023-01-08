@@ -2,6 +2,10 @@
   --glowColor: hsla(0, 0%, 100%, 0.1);
 }
 
-#card-title {
+.card-title {
   justify-content: space-between;
+}
+
+.card-item {
+  min-height: 400px;
 }
