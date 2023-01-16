@@ -10,6 +10,7 @@
     "clean": "rm -rf build/",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
+    "format": "prettier --write .",
     "qrcode": "qrcode -o public/qr.svg https://loic.vour.ch --qzone 2"
   },
   "eslintConfig": {
@@ -45,6 +46,7 @@
     "web-vitals": "^2.1.4"
   },
   "devDependencies": {
+    "prettier": "2.8.3",
     "qrcode": "^1.4.4"
   }
 }

@@ -1,19 +1,19 @@
-import React from 'react'
-import { Anchor, List } from 'dracula-ui'
-import { FaGithub, FaLinkedin, FaNewspaper, FaYoutube } from 'react-icons/fa'
+import React from "react";
+import { Anchor, List } from "dracula-ui";
+import { FaGithub, FaLinkedin, FaNewspaper, FaYoutube } from "react-icons/fa";
 
-function Links () {
+function Links() {
   return (
     <List>
       {linksList.map((link, index) => (
         <li key={index}>
           <Anchor
             href={link.url}
-            color='green'
-            hoverColor='purple'
-            size='lg'
-            target='_blank'
-            rel='noopener noreferrer'
+            color="green"
+            hoverColor="purple"
+            size="lg"
+            target="_blank"
+            rel="noopener noreferrer"
             key={index}
           >
             {link.icon} {link.text}
@@ -21,30 +21,30 @@ function Links () {
         </li>
       ))}
     </List>
-  )
+  );
 }
 
 const linksList = [
   {
-    url: 'https://www.linkedin.com/in/loicvourch/',
+    url: "https://www.linkedin.com/in/loicvourch/",
     icon: <FaLinkedin />,
-    text: 'LinkedIn'
+    text: "LinkedIn",
   },
   {
-    url: 'https://github.com/VeryBadFrags',
+    url: "https://github.com/VeryBadFrags",
     icon: <FaGithub />,
-    text: 'GitHub'
+    text: "GitHub",
   },
   {
-    url: 'https://blog.verybadfrags.com',
+    url: "https://blog.verybadfrags.com",
     icon: <FaNewspaper />,
-    text: 'Blog'
+    text: "Blog",
   },
   {
-    url: 'https://www.youtube.com/channel/UCWRocYB0ymy1A3p2a_VQAAg',
+    url: "https://www.youtube.com/channel/UCWRocYB0ymy1A3p2a_VQAAg",
     icon: <FaYoutube />,
-    text: 'Music'
-  }
-]
+    text: "Music",
+  },
+];
 
-export default Links
+export default Links;

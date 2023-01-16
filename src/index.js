@@ -1,25 +1,25 @@
-import './index.scss'
-import React from 'react'
-import { hydrate, render } from 'react-dom'
-import App from './App'
-import reportWebVitals from './reportWebVitals'
+import "./index.scss";
+import React from "react";
+import { hydrate, render } from "react-dom";
+import App from "./App";
+import reportWebVitals from "./reportWebVitals";
 
-const rootElement = document.getElementById('root')
+const rootElement = document.getElementById("root");
 if (rootElement.hasChildNodes()) {
-  hydrate(<App />, rootElement)
+  hydrate(<App />, rootElement);
 } else {
   render(
     <React.StrictMode>
       <App />
     </React.StrictMode>,
     rootElement
-  )
+  );
 }
 
 // If you want to start measuring performance in your app, pass a function
 // to log results (for example: reportWebVitals(console.log))
 // or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals()
+reportWebVitals();
 
 // Dynamic background
 // const startColor = [76, 86, 106]; // #4C566A nord3
