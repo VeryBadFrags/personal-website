@@ -1,11 +1,13 @@
-$md-width: 768px;
-$lg-width: 1024px;
+:root {
+--md-width: 768px;
+--lg-width: 1024px;
+}
 
 .games-container {
   column-count: 1;
 }
 
-@media (min-width: $lg-width) {
+@media (min-width: 1024px) {
   .games-container {
     column-count: 2;
   }
