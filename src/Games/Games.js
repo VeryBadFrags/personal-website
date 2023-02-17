@@ -1,4 +1,4 @@
-import "./Games.scss";
+import "./Games.css";
 import React from "react";
 import Blocks from "../content/blocks";
 import CardItem from "../CardItem/CardItem";

@@ -1,7 +1,7 @@
 import "dracula-ui/styles/dracula-ui.css";
 import { Box, Divider, Heading } from "dracula-ui";
 import React from "react";
-import "./App.scss";
+import "./App.css";
 import Links from "./Links";
 import Games from "./Games/Games";
 import Contact from "./Contact";
