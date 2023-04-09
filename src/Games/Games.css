@@ -1,6 +1,6 @@
 :root {
---md-width: 768px;
---lg-width: 1024px;
+  --md-width: 768px;
+  --lg-width: 1024px;
 }
 
 .games-container {
