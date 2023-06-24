@@ -1,6 +1,6 @@
 import "./Games.css";
 import React from "react";
-import Blocks from "../content/blocks";
+import Tetromino from "../content/tetromino";
 import CardItem from "../CardItem/CardItem";
 import Sand from "../content/sand";
 import OfflineSpyfall from "../content/off-spyfall";
@@ -15,7 +15,7 @@ function Games() {
       <CardItem content={Sand} />
       <CardItem content={Spyfall} />
       <CardItem content={Renard} />
-      <CardItem content={Blocks} />
+      <CardItem content={Tetromino} />
       <CardItem content={OfflineSpyfall} />
       <CardItem content={OfflineWolf} />
     </Box>

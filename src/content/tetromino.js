@@ -1,6 +1,6 @@
 const content = {
   icon: '<i class="fas fa-cubes"></i>',
-  title: "Blocks",
+  title: "Tetromino",
   body: ["That tetromino game.", "(TypeScript)"],
   links: [
     {
@@ -8,7 +8,7 @@ const content = {
       text: '<i class="fas fa-play-circle"></i> Play the game',
     },
     {
-      url: "https://github.com/VeryBadFrags/blocks",
+      url: "https://github.com/VeryBadFrags/tetromino",
       text: '<i class="fas fa-code"></i> Source code',
     },
   ],
