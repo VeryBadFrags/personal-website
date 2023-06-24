@@ -7,7 +7,7 @@ export default function CardItem({ content }) {
   return (
     <Card
       variant="subtle"
-      color="cyan"
+      // color="cyan"
       borderColor="purple"
       p="sm"
       mb="md"
