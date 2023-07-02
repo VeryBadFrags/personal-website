@@ -10,14 +10,6 @@ const content = {
       url: "https://spy.verybadfrags.com",
       text: '<i class="fas fa-play-circle"></i> Play the game',
     },
-    {
-      url: "https://github.com/VeryBadFrags/online-spy-client",
-      text: '<i class="fas fa-code"></i> Client source code',
-    },
-    {
-      url: "https://github.com/VeryBadFrags/spyfall-server",
-      text: '<i class="fas fa-code"></i> Server source code',
-    },
   ],
   badge: true,
 };
