@@ -4,6 +4,14 @@ import { hydrate, render } from "react-dom";
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 
+import Plausible from "plausible-tracker";
+const plausible = Plausible({
+  domain: "loic.vour.ch",
+  apiHost: "/ps",
+  hashMode: false,
+});
+plausible.trackPageview();
+
 const rootElement = document.getElementById("root");
 if (rootElement.hasChildNodes()) {
   hydrate(<App />, rootElement);
