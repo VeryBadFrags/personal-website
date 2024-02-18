@@ -1,5 +1,6 @@
 {
   "title": "Falling Sand",
+  "sortOrder": 2,
   "icon": "fas fa-hourglass-half",
   "body": [
     "A relaxing sandbox game."

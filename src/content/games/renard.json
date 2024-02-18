@@ -1,5 +1,6 @@
 {
   "icon": "fas fa-paw",
+  "sortOrder": 7,
   "title": "Renard",
   "body": [
     "A prototype for a terminal-based puzzle-adventure game."

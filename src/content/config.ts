@@ -6,6 +6,7 @@ const gamesCollection = defineCollection({
   type: "data",
   schema: z.object({
     title: z.string(),
+    sortOrder: z.number(),
     icon: z.string(),
     body: z.array(z.string()),
     tech: z.array(z.object({ icon: z.string().optional(), name: z.string() })),

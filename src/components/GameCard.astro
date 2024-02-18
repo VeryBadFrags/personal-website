@@ -7,36 +7,48 @@ interface Props {
 const { game } = Astro.props;
 ---
 
-<div class="card border-primary mb-5">
-  <div class="card-header">
-    <i class={game.data.icon}></i>
-    {game.data.title}
-    {
-      game.data.badge ? (
-        <div>
-          <img
-            alt="MIT License"
-            src="https://img.shields.io/badge/license-MIT-9580ff"
-          />
-        </div>
-      ) : null
-    }
-  </div>
-
-  <div class="card-body">
-    <div class="card-text">
-      {game.data.body.map((bodyItem) => <p>{bodyItem}</p>)}
-      <div>{game.data.tech.map(tech => (<span class="badge bg-secondary mx-1"><i class={tech.icon}></i> {tech.name}</span>))}</div>
+<div class="col mb-5">
+  <div class="card h-100 border-secondary">
+    <div class="card-header">
+      <i class={game.data.icon}></i>
+      {game.data.title}
+      {
+        game.data.badge ? (
+          <div>
+            <img
+              alt="MIT License"
+              src="https://img.shields.io/badge/license-MIT-9580ff"
+            />
+          </div>
+        ) : null
+      }
     </div>
-  </div>
 
-  <ul class="list-group list-group-flush">
-    {
-      game.data.links.map((link) => (
-        <li class="list-group-item">
-          <a href={link.url}><i class={link.icon}></i> {link.text}</a>
-        </li>
-      ))
-    }
-  </ul>
+    <div class="card-body">
+      <div class="card-text">
+        {game.data.body.map((bodyItem) => <p>{bodyItem}</p>)}
+        <div>
+          {
+            game.data.tech.map((tech) => (
+              <span class="badge bg-secondary mx-1">
+                <i class={tech.icon} /> {tech.name}
+              </span>
+            ))
+          }
+        </div>
+      </div>
+    </div>
+
+    <ul class="list-group list-group-flush">
+      {
+        game.data.links.map((link) => (
+          <li class="list-group-item">
+            <a href={link.url} target="_blank">
+              <i class={link.icon} /> {link.text}
+            </a>
+          </li>
+        ))
+      }
+    </ul>
+  </div>
 </div>

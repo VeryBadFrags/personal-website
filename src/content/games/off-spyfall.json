@@ -1,5 +1,6 @@
 {
   "id": "offline-spyfall",
+  "sortOrder": 5,
   "icon": "fas fa-phone-slash",
   "title": "Offline Spyfall",
   "body": [

@@ -1,5 +1,6 @@
 {
   "title": "Spyfall",
+  "sortOrder": 1,
   "icon": "fas fa-user-secret",
   "body": [
     "A social-deduction game playable online with your friends. Inspired by Spyfall (designed by Alexander Ushan)."
