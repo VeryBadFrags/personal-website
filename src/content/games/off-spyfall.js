@@ -1,4 +1,5 @@
 const content = {
+  id: "offline-spyfall",
   icon: '<i class="fas fa-phone-slash"></i><i class="fas fa-user-secret"></i>',
   title: "Offline Spyfall",
   body: [

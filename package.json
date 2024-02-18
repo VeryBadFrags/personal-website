@@ -8,13 +8,19 @@
     "build": "astro check && astro build",
     "preview": "astro preview",
     "astro": "astro",
-    "format": "prettier --write ."
+    "format": "prettier --write .",
+    "qrcode": "qrcode -o public/qr.svg https://loic.vour.ch --qzone 2"
   },
   "dependencies": {
     "@astrojs/check": "^0.5.4",
     "@astrojs/tailwind": "^5.1.0",
     "astro": "^4.4.0",
-    "tailwindcss": "^3.4.1",
+    "plausible-tracker": "^0.3.8",
     "typescript": "^5.3.3"
+  },
+  "devDependencies": {
+    "prettier": "^3.2.5",
+    "prettier-plugin-astro": "^0.13.0",
+    "qrcode": "^1.5.3"
   }
 }

@@ -1,12 +1,12 @@
 import "./Games.css";
 import React from "react";
-import Tetromino from "../content/tetromino";
+import Tetromino from "../../src/content/games/tetromino";
 import CardItem from "../CardItem/CardItem";
-import Sand from "../content/sand";
-import OfflineSpyfall from "../content/off-spyfall";
-import OfflineWolf from "../content/off-wolf";
-import Renard from "../content/renard";
-import Spyfall from "../content/spyfall";
+import Sand from "../../src/content/games/sand";
+import OfflineSpyfall from "../../src/content/games/off-spyfall";
+import OfflineWolf from "../../src/content/games/off-wolf";
+import Renard from "../../src/content/games/renard";
+import Spyfall from "../../src/content/games/spyfall";
 import { Box } from "dracula-ui";
 
 function Games() {

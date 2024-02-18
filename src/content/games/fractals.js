@@ -1,6 +1,7 @@
 const content = {
-  icon: '<i class="fas fa-snowflake"></i>',
+  id: "fractals",
   title: "Fractals",
+  icon: '<i class="fas fa-snowflake"></i>',
   body: ["Fractals generator.", "(TypeScript)"],
   links: [
     {

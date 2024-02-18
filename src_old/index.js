@@ -20,7 +20,7 @@ if (rootElement.hasChildNodes()) {
     <React.StrictMode>
       <App />
     </React.StrictMode>,
-    rootElement
+    rootElement,
   );
 }
 
