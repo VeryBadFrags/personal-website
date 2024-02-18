@@ -8,16 +8,18 @@ const { game } = Astro.props;
 ---
 
 <div class="col mb-5">
-  <div class="card h-100 border-success">
-    <div class="card-header">
-      <i class={game.data.icon}></i>
-      {game.data.title}
+  <div class="card h-100 border-secondary">
+    <div class="card-header d-flex justify-content-between">
+      <h3>
+        <i class={game.data.icon}></i>
+        {game.data.title}
+      </h3>
       {
         game.data.badge ? (
           <div>
             <img
               alt="MIT License"
-              src="https://img.shields.io/badge/license-MIT-9580ff"
+              src="https://img.shields.io/badge/license-MIT-e5c890"
             />
           </div>
         ) : null

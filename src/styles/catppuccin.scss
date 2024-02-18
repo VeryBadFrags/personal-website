@@ -1,0 +1,38 @@
+@import "../../node_modules/@catppuccin/palette/scss/macchiato";
+// https://catppuccin.ryanccn.dev/palette
+
+// Bootstrap override
+$primary: $blue;
+$secondary: $overlay1;
+$success: $green;
+$danger: $red;
+$warning: $yellow;
+$info: $sky;
+$light: $text;
+$dark: $base;
+$black: $crust;
+
+$card-cap-bg: $surface0;
+$card-cap-color: $yellow;
+$card-bg: $dark;
+$list-group-bg: $card-cap-bg;
+
+body {
+    background-color: $black !important;
+    color: $text;
+}
+
+h2 {
+    color: $subtext1 !important;
+}
+
+a {
+    color: $blue;
+}
+
+a:visited {
+    color: $lavender;
+}
+
+// set changes
+@import "../../node_modules/bootstrap/scss/bootstrap";

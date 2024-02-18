@@ -26,26 +26,6 @@ function Links() {
 }
 
 const linksList = [
-  {
-    url: "https://www.linkedin.com/in/loicvourch/",
-    icon: <FaLinkedin />,
-    text: "LinkedIn",
-  },
-  {
-    url: "https://github.com/VeryBadFrags",
-    icon: <FaGithub />,
-    text: "GitHub",
-  },
-  {
-    url: "https://blog.verybadfrags.com",
-    icon: <FaNewspaper />,
-    text: "Blog",
-  },
-  {
-    url: "https://www.youtube.com/channel/UCWRocYB0ymy1A3p2a_VQAAg",
-    icon: <FaYoutube />,
-    text: "Music",
-  },
 ];
 
 export default Links;

@@ -1,6 +1,6 @@
 {
   "title": "Tetromino",
-  "sortOrder": 3,
+  "sortOrder": 2,
   "icon": "fas fa-cubes",
   "body": ["That tetromino game."],
   "tech": [{ "icon": "fab fa-js", "name": "Typescript" }],

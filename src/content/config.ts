@@ -17,6 +17,16 @@ const gamesCollection = defineCollection({
   }),
 });
 
+const links = defineCollection({
+  type: "data",
+  schema: z.object({
+    text: z.string(),
+    sortOrder: z.number(),
+    url: z.string().url(),
+    icon: z.string(),
+  }),
+});
+
 // 3. Export a single `collections` object to register your collection(s)
 //    This key should match your collection directory name in "src/content"
 export const collections = {
