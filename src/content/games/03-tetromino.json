@@ -1,0 +1,19 @@
+{
+  "title": "Tetromino",
+  "icon": "fas fa-cubes",
+  "body": ["That tetromino game."],
+  "tech": [{ "icon": "fab fa-js", "name": "Typescript" }],
+  "links": [
+    {
+      "url": "https://blocks.verybadfrags.com",
+      "icon": "fas fa-play-circle",
+      "text": "Play the game"
+    },
+    {
+      "url": "https://github.com/VeryBadFrags/tetromino",
+      "icon": "fas fa-code",
+      "text": "Source code"
+    }
+  ],
+  "badge": true
+}

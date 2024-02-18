@@ -7,9 +7,12 @@ const gamesCollection = defineCollection({
   schema: z.object({
     title: z.string(),
     icon: z.string(),
-    body: z.string(),
-    links: z.array(z.object({ url: z.string(), text: z.string() })),
-    badge: z.boolean(),
+    body: z.array(z.string()),
+    tech: z.array(z.object({ icon: z.string().optional(), name: z.string() })),
+    links: z.array(
+      z.object({ url: z.string().url(), icon: z.string(), text: z.string() }),
+    ),
+    badge: z.boolean().optional(),
   }),
 });
 

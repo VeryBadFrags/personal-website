@@ -7,7 +7,7 @@ const { title } = Astro.props;
 ---
 
 <!doctype html>
-<html lang="en">
+<html lang="en" data-bs-theme="dark">
   <head>
     <meta charset="UTF-8" />
     <meta name="description" content="Astro description" />
@@ -20,7 +20,7 @@ const { title } = Astro.props;
       src="https://kit.fontawesome.com/d2bd99b493.js"
       crossorigin="anonymous"></script>
   </head>
-  <body class="bg-slate-800 text-white">
+  <body>
     <slot />
   </body>
 </html>

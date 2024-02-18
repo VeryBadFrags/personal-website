@@ -1,0 +1,15 @@
+{
+  "id": "fractals",
+  "title": "Fractals",
+  "icon": "fas fa-snowflake",
+  "body": ["Fractals generator."],
+  "tech": [{ "icon": "fab fa-js", "name": "TypeScript" }],
+  "links": [
+    {
+      "url": "https://fractals.verybadfrags.com",
+      "icon": "fas fa-play-circle",
+      "text": "Try the project"
+    }
+  ],
+  "badge": false
+}

@@ -1,10 +1,30 @@
 ---
-import Games from "../components/Games.astro";
 import Layout from "../layouts/Layout.astro";
+import "bootstrap/dist/css/bootstrap.min.css";
+import { getCollection } from "astro:content";
+import GameCard from "../components/GameCard.astro"
+
+const allGames = await getCollection("games");
 ---
 
 <Layout title="Loic Vourch - Software engineer">
-  <main>
-    <Games />
+  <main class="container">
+    <h1 class="text-primary">Loic Vourch - Software Engineer</h1>
+    <div>
+      {allGames.map((game: any) => <GameCard game={game}></GameCard>)}
+    </div>
   </main>
 </Layout>
+
+<script>
+  // Astro will bundle and process this automatically
+  // import "bootstrap/dist/js/bootstrap.bundle.min.js";
+
+  import Plausible from "plausible-tracker";
+  const plausible = Plausible({
+    domain: "loic.vour.ch",
+    apiHost: "/ps",
+    hashMode: false,
+  });
+  plausible.trackPageview();
+</script>
