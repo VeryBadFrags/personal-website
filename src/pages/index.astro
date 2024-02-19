@@ -1,10 +1,12 @@
 ---
-import Layout from "../layouts/Layout.astro";
 import { getCollection } from "astro:content";
+
+import Layout from "../layouts/Layout.astro";
 import GameCard from "../components/GameCard.astro";
 import Link from "../components/Link.astro";
 
 import "../styles/catppuccin.scss";
+import qrCodeImage from "../images/qr.svg";
 
 const allLinks = await getCollection("links");
 const allGames = await getCollection("games");
@@ -15,7 +17,7 @@ const allGames = await getCollection("games");
     <h1 class="text-primary mb-5">Loic Vourch - Software Engineer</h1>
 
     <div class="mb-5">
-      <h2><i class="fas fa-link"></i> Links</h2>
+      <h2 class="mb-4"><i class="fas fa-link"></i> Links</h2>
       <ul class="list-group">
         {
           allLinks
@@ -25,9 +27,9 @@ const allGames = await getCollection("games");
       </ul>
     </div>
 
-    <div class="">
-      <h2><i class="fas fa-gamepad"></i> Games</h2>
-      <div class="row row-cols-2">
+    <div>
+      <h2 class="mb-4"><i class="fas fa-gamepad"></i> Games</h2>
+      <div class="row row-cols-1 row-cols-sm-2 row-cols-xxl-3">
         {
           allGames
             .sort((a, b) => a.data.sortOrder - b.data.sortOrder)
@@ -37,6 +39,23 @@ const allGames = await getCollection("games");
     </div>
 
     <hr />
+
+    <div class="card border-secondary my-5">
+      <div class="card-header"><h2>Contact</h2></div>
+      <div class="card-body">
+        <div class="card-text">
+          <a href="contact@vour.ch"
+            ><i class="fas fa-envelope"></i> contact@vour.ch</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="mb-5">
+      <figure>
+        <img src={qrCodeImage.src} alt="QR Code to this page" height="256" loading="lazy" />
+        <figcaption>Link to this page</figcaption>
+      </figure>
+    </div>
   </main>
 </Layout>
 

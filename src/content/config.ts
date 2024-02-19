@@ -17,7 +17,7 @@ const gamesCollection = defineCollection({
   }),
 });
 
-const links = defineCollection({
+const linksCollection = defineCollection({
   type: "data",
   schema: z.object({
     text: z.string(),
@@ -31,4 +31,5 @@ const links = defineCollection({
 //    This key should match your collection directory name in "src/content"
 export const collections = {
   games: gamesCollection,
+  links: linksCollection,
 };

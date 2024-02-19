@@ -10,7 +10,7 @@
     "preview": "astro preview",
     "astro": "astro",
     "format": "prettier --write .",
-    "clean": "rm -rf build/",
+    "clean": "rm -rf dist/",
     "qrcode": "qrcode -o public/qr.svg https://loic.vour.ch --qzone 2"
   },
   "dependencies": {

@@ -1,5 +1,7 @@
 ---
+import { Image } from "astro:assets";
 import type { CollectionEntry } from "astro:content";
+
 interface Props {
   game: CollectionEntry<"games">;
 }
@@ -17,9 +19,11 @@ const { game } = Astro.props;
       {
         game.data.badge ? (
           <div>
-            <img
+            <Image
+              src="https://img.shields.io/badge/license-MIT-8bd5ca"
               alt="MIT License"
-              src="https://img.shields.io/badge/license-MIT-81c8be"
+              width="78"
+              height="20"
             />
           </div>
         ) : null
@@ -32,7 +36,7 @@ const { game } = Astro.props;
         <div>
           {
             game.data.tech.map((tech) => (
-              <span class="badge bg-secondary mx-1">
+              <span class="badge bg-info text-black mx-1">
                 <i class={tech.icon} /> {tech.name}
               </span>
             ))
