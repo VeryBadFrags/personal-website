@@ -1,7 +1,7 @@
 {
+  "title": "Offline Werewolf",
   "icon": "fas fa-mask",
   "sortOrder": 6,
-  "title": "Offline Werewolf",
   "body": [
     "A server-free, standalone spin on the Mafia/Werewolf formula that can be played without an internet connection."
   ],

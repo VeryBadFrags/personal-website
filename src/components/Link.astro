@@ -6,3 +6,10 @@ interface Props {
 
 const { link } = Astro.props;
 ---
+
+<a
+  href={link.data.url}
+  target="_blank"
+  class="list-group-item list-group-item-action"
+  ><i class={link.data.icon}></i> {link.data.text}</a
+>

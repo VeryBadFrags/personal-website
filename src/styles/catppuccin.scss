@@ -13,7 +13,7 @@ $dark: $base;
 $black: $crust;
 
 $card-cap-bg: $surface0;
-$card-cap-color: $yellow;
+$card-cap-color: $teal;
 $card-bg: $dark;
 $list-group-bg: $card-cap-bg;
 
@@ -30,8 +30,12 @@ a {
     color: $blue;
 }
 
+a:hover {
+    color: $sapphire;
+}
+
 a:visited {
-    color: $lavender;
+    color: $mauve;
 }
 
 // set changes

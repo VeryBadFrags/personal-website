@@ -1,7 +1,8 @@
 {
-  "name": "loic.vour.ch",
+  "name": "personal-site",
   "type": "module",
   "version": "0.0.1",
+  "private": true,
   "scripts": {
     "dev": "astro dev",
     "start": "astro dev",
@@ -9,6 +10,7 @@
     "preview": "astro preview",
     "astro": "astro",
     "format": "prettier --write .",
+    "clean": "rm -rf build/",
     "qrcode": "qrcode -o public/qr.svg https://loic.vour.ch --qzone 2"
   },
   "dependencies": {
