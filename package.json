@@ -11,7 +11,7 @@
     "astro": "astro",
     "format": "prettier --write .",
     "clean": "rm -rf dist/",
-    "qrcode": "qrcode -o public/qr.svg https://loic.vour.ch --qzone 2"
+    "qrcode": "qrcode -o src/images/qr.svg https://loic.vour.ch --qzone 2"
   },
   "dependencies": {
     "@astrojs/check": "^0.5.4",
