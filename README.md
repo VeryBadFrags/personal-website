@@ -38,7 +38,7 @@ FONTAWESOME_KIT_URL=https://kit.fontawesome.com/your-kit-id.js
 
 ## License
 
-MIT
+[MIT](LICENSE.txt)
 
 Feel free to re-use this template.
 
