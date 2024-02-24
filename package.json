@@ -1,0 +1,31 @@
+{
+  "name": "personal-site",
+  "type": "module",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "dev": "astro dev",
+    "start": "astro dev",
+    "build": "astro check && astro build",
+    "preview": "astro preview",
+    "astro": "astro",
+    "format": "prettier --write .",
+    "clean": "rm -rf dist/",
+    "qrcode": "qrcode -o src/images/qr.svg https://loic.vour.ch --qzone 2"
+  },
+  "dependencies": {
+    "@astrojs/check": "^0.5.4",
+    "@astrojs/tailwind": "^5.1.0",
+    "astro": "^4.4.0",
+    "bootstrap": "^5.3.2",
+    "plausible-tracker": "^0.3.8",
+    "typescript": "^5.3.3"
+  },
+  "devDependencies": {
+    "@catppuccin/palette": "^1.1.0",
+    "prettier": "^3.2.5",
+    "prettier-plugin-astro": "^0.13.0",
+    "qrcode": "^1.5.3",
+    "sass": "^1.71.0"
+  }
+}

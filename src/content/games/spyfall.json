@@ -1,0 +1,25 @@
+{
+  "title": "Spyfall",
+  "sortOrder": 1,
+  "icon": "fas fa-user-secret",
+  "body": [
+    "A social-deduction game playable online with your friends. Inspired by Spyfall (designed by Alexander Ushan)."
+  ],
+  "tech": [
+    { "icon": "fab fa-react", "name": "React" },
+    { "name": "Socket.IO" }
+  ],
+  "links": [
+    {
+      "url": "https://spy.verybadfrags.com",
+      "icon": "fas fa-play-circle",
+      "text": "Play the game"
+    },
+    {
+      "url": "https://github.com/VeryBadFrags/spyfall",
+      "icon": "fas fa-code",
+      "text": "Source code"
+    }
+  ],
+  "badge": true
+}

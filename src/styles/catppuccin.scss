@@ -1,0 +1,71 @@
+@import "../../node_modules/@catppuccin/palette/scss/macchiato";
+// https://catppuccin.ryanccn.dev/palette
+
+// Bootstrap override
+$primary: $blue;
+$secondary: $overlay1;
+$tertiary: $overlay2;
+$success: $green;
+$danger: $red;
+$warning: $yellow;
+$info: $sky;
+$light: $text;
+$dark: $base;
+
+$card-cap-bg: $mantle;
+$card-cap-color: $sky;
+$card-bg: $mantle;
+$list-group-bg: $card-cap-bg;
+
+// set changes
+@import "../../node_modules/bootstrap/scss/bootstrap";
+
+body {
+  background-color: $base;
+  color: $text;
+}
+
+h1 > span {
+  background: linear-gradient(to right, $blue, $peach);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+h2 {
+  color: $text;
+}
+
+h2 > span {
+  background-color: $text;
+  background: linear-gradient(to right, $text, $lavender);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+h3 {
+  // color: $peach;
+  text-shadow: 1px 1px 2px $mantle;
+}
+
+a {
+  color: $blue;
+}
+
+a:hover {
+  color: $sapphire;
+}
+
+a:visited {
+  color: $mauve;
+}
+
+.card:hover {
+  border-color: $surface1 !important;
+  box-shadow: $box-shadow !important;
+}
+
+ul.list-group:hover {
+  box-shadow: $box-shadow !important;
+}

@@ -1,0 +1,59 @@
+---
+import { Image } from "astro:assets";
+import type { CollectionEntry } from "astro:content";
+
+interface Props {
+  game: CollectionEntry<"games">;
+}
+
+const { game } = Astro.props;
+---
+
+<div class="col mb-5">
+  <div class="card shadow-sm h-100 p-2">
+    <div class="card-header d-flex justify-content-between">
+      <h3>
+        <i class={game.data.icon}></i>
+        {game.data.title}
+      </h3>
+      {
+        game.data.badge ? (
+          <Image
+            src="https://img.shields.io/badge/license-MIT-91d7e3?labelColor=494d64"
+            alt="MIT License"
+            loading="eager"
+            width="78"
+            height="20"
+          />
+        ) : null
+      }
+    </div>
+
+    <div class="card-body">
+      <div class="card-text">
+        {game.data.body.map((bodyItem) => <p>{bodyItem}</p>)}
+        <div>
+          {
+            game.data.tech.map((tech) => (
+              <span class="badge bg-info text-black mx-1">
+                <i class={tech.icon} /> {tech.name}
+              </span>
+            ))
+          }
+        </div>
+      </div>
+    </div>
+
+    <ul class="list-group list-group-flush">
+      {
+        game.data.links.map((link) => (
+          <li class="list-group-item">
+            <a href={link.url} target="_blank">
+              <i class={link.icon} /> {link.text}
+            </a>
+          </li>
+        ))
+      }
+    </ul>
+  </div>
+</div>

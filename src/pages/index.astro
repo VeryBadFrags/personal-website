@@ -1,0 +1,63 @@
+---
+import { getCollection } from "astro:content";
+
+import Layout from "../layouts/Layout.astro";
+import Link from "../components/Link.astro";
+import GameCard from "../components/GameCard.astro";
+import Contact from "../components/Contact.astro";
+import Footer from "../components/Footer.astro";
+
+import "../styles/catppuccin.scss";
+
+const allLinks = await getCollection("links");
+const allGames = await getCollection("games");
+---
+
+<Layout title="Loic Vourch - Software Engineer">
+  <main class="container">
+    <h1 class="mt-4 mb-5">
+      <span>Loic Vourch - Software Engineer</span>
+    </h1>
+
+    <section>
+      <h2 class="mb-4"><i class="fas fa-link"></i> <span>Links</span></h2>
+      <ul class="list-group shadow-sm mb-5">
+        {
+          allLinks
+            .sort((a, b) => a.data.sortOrder - b.data.sortOrder)
+            .map((link) => <Link link={link} />)
+        }
+      </ul>
+    </section>
+
+    <section>
+      <h2 class="mb-4"><i class="fas fa-gamepad"></i> <span>Games</span></h2>
+      <div class="row row-cols-1 row-cols-md-2 row-cols-xxl-3">
+        {
+          allGames
+            .filter((game: any) => !game.data.draft)
+            .sort((a: any, b: any) => a.data.sortOrder - b.data.sortOrder)
+            .map((game: any) => <GameCard game={game} />)
+        }
+      </div>
+    </section>
+
+    <hr />
+
+    <Contact />
+  </main>
+  <Footer />
+</Layout>
+
+<script>
+  // Astro will bundle and process this automatically
+  // import "bootstrap/dist/js/bootstrap.bundle.min.js";
+
+  import Plausible from "plausible-tracker";
+  const plausible = Plausible({
+    domain: "loic.vour.ch",
+    apiHost: "/ps",
+    hashMode: false,
+  });
+  plausible.trackPageview();
+</script>
