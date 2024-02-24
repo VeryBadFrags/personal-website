@@ -41,5 +41,6 @@ Feel free to re-use this template.
 ## Links
 
 - [Astro](https://astro.build/)
-- Theme: [Catppuccin](https://github.com/catppuccin/palette/blob/HEAD/docs/sass.md)
+- Theme: [Catppuccin 🌺 Macchiato](https://github.com/catppuccin/palette/blob/HEAD/docs/sass.md)
+- [GitHub Corners](https://tholman.com/github-corners/)
 - Favicon: [UXWing](https://uxwing.com/)
