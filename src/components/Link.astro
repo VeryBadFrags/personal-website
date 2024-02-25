@@ -5,18 +5,34 @@ interface Props {
 }
 
 const { link } = Astro.props;
+
+// Font Awesome
+import { library, icon } from "@fortawesome/fontawesome-svg-core";
+import {
+  faLinkedin,
+  faGithub,
+  faYoutube,
+} from "@fortawesome/free-brands-svg-icons";
+import { faNewspaper } from "@fortawesome/free-solid-svg-icons";
+
+library.add(faLinkedin, faGithub, faYoutube, faNewspaper);
+
+const linkIcon = icon({
+  prefix: link.data.iconPrefix,
+  iconName: link.data.icon,
+});
 ---
 
 <a
   href={link.data.url}
   target="_blank"
   class="list-group-item list-group-item-action"
-  ><i class={link.data.icon}></i> {link.data.text}</a
+  ><Fragment set:html={linkIcon.html} /> {link.data.text}</a
 >
-<style>
-  .fa-js {
+<style is:global>
+  /* .fa-js {
     color: #f0db4f;
-  }
+  } */
 
   .fa-linkedin {
     border-radius: 2px;

@@ -12,6 +12,16 @@ import "../styles/catppuccin.scss";
 
 const allLinks = await getCollection("links");
 const allGames = await getCollection("games");
+
+// Font Awesome
+import { library, icon } from "@fortawesome/fontawesome-svg-core";
+// import { faLinkedin } from "@fortawesome/free-brands-svg-icons";
+import { faGamepad, faLink } from "@fortawesome/free-solid-svg-icons";
+
+library.add(faGamepad, faLink);
+
+const gamepad = icon({ prefix: "fas", iconName: "gamepad" });
+const linkIcon = icon({ prefix: "fas", iconName: "link" });
 ---
 
 <Layout title="Loic Vourch - Software Engineer">
@@ -21,7 +31,7 @@ const allGames = await getCollection("games");
     </h1>
 
     <section>
-      <h2 class="mb-4"><i class="fas fa-link"></i> <span>Links</span></h2>
+      <h2 class="mb-4"><Fragment set:html={linkIcon.html} /> Links</h2>
       <ul class="list-group shadow-sm mb-5">
         {
           allLinks
@@ -32,7 +42,10 @@ const allGames = await getCollection("games");
     </section>
 
     <section>
-      <h2 class="mb-4"><i class="fas fa-gamepad"></i> <span>Games</span></h2>
+      <h2 class="mb-4">
+        <Fragment set:html={gamepad.html} />
+        <span>Games</span>
+      </h2>
       <div class="row row-cols-1 row-cols-md-2 row-cols-xxl-3">
         {
           allGames

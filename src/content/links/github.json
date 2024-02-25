@@ -2,5 +2,6 @@
   "text": "GitHub",
   "sortOrder": 2,
   "url": "https://github.com/VeryBadFrags",
-  "icon": "fa-brands fa-github"
+  "iconPrefix": "fab",
+  "icon": "github"
 }

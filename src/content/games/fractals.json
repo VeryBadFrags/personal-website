@@ -1,13 +1,13 @@
 {
   "sortOrder": 4,
   "title": "Fractals",
-  "icon": "fas fa-snowflake",
+  "icon": "snowflake",
   "body": ["Fractals generator."],
-  "tech": [{ "icon": "fab fa-js", "name": "TypeScript" }],
+  "tech": [{ "icon": "js", "name": "TypeScript" }],
   "links": [
     {
       "url": "https://fractals.verybadfrags.com",
-      "icon": "fas fa-play-circle",
+      "icon": "play-circle",
       "text": "Try the project"
     }
   ],

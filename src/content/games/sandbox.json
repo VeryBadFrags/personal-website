@@ -1,18 +1,18 @@
 {
   "title": "Falling Sand",
   "sortOrder": 3,
-  "icon": "fas fa-hourglass-half",
+  "icon": "hourglass-half",
   "body": ["A relaxing sandbox game."],
-  "tech": [{ "icon": "fab fa-js", "name": "Typescript" }],
+  "tech": [{ "icon": "js", "name": "Typescript" }],
   "links": [
     {
       "url": "https://sand.verybadfrags.com",
-      "icon": "fas fa-play-circle",
+      "icon": "play-circle",
       "text": "Play the game"
     },
     {
       "url": "https://github.com/VeryBadFrags/sandbox",
-      "icon": "fas fa-code",
+      "icon": "code",
       "text": "Source code"
     }
   ],

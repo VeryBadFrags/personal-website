@@ -28,14 +28,6 @@ npm run build
 make dev
 ```
 
-### [Font Awesome](https://fontawesome.com)
-
-Create a `.env` file and add a link to your own Font Awesome Kit:
-
-```.env
-FONTAWESOME_KIT_URL=https://kit.fontawesome.com/your-kit-id.js
-```
-
 ## License
 
 [MIT](LICENSE.txt)

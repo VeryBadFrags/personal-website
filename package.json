@@ -16,6 +16,9 @@
   "dependencies": {
     "@astrojs/check": "^0.5.4",
     "@astrojs/tailwind": "^5.1.0",
+    "@fortawesome/fontawesome-svg-core": "^6.5.1",
+    "@fortawesome/free-brands-svg-icons": "^6.5.1",
+    "@fortawesome/free-solid-svg-icons": "^6.5.1",
     "astro": "^4.4.0",
     "bootstrap": "^5.3.2",
     "plausible-tracker": "^0.3.8",

@@ -27,12 +27,18 @@ const { title } = Astro.props;
       rel="alternate icon"
       href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>👨‍💻</text></svg>"
     />
-
-    <script
-      src={import.meta.env.FONTAWESOME_KIT_URL}
-      crossorigin="anonymous"></script>
   </head>
   <body>
     <slot />
   </body>
 </html>
+
+<style is:global>
+  .svg-inline--fa {
+    overflow: visible;
+    box-sizing: content-box;
+    display: inline-block;
+    height: 1em;
+    vertical-align: -0.125em;
+  }
+</style>

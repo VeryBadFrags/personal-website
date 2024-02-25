@@ -1,20 +1,20 @@
 {
   "sortOrder": 5,
-  "icon": "fas fa-phone-slash",
+  "icon": "phone-slash",
   "title": "Offline Spyfall",
   "body": [
     "A server-free, standalone game inspired by Spyfall that can be played without an internet connection."
   ],
-  "tech": [{ "icon": "fab fa-js", "name": "TypeScript" }, { "name": "Astro" }],
+  "tech": [{ "icon": "js", "name": "TypeScript" }, { "name": "Astro" }],
   "links": [
     {
       "url": "https://offline-spy.verybadfrags.com",
-      "icon": "fas fa-play-circle",
+      "icon": "play-circle",
       "text": "Play the game"
     },
     {
       "url": "https://github.com/VeryBadFrags/offline-spy",
-      "icon": "fas fa-code",
+      "icon": "code",
       "text": "Source code"
     }
   ],

@@ -1,5 +1,9 @@
 // 1. Import utilities from `astro:content`
+import type { IconName, IconPrefix } from "@fortawesome/fontawesome-svg-core";
 import { z, defineCollection } from "astro:content";
+
+const faIconNameType: z.ZodType<IconName> = z.any();
+const faIconPrefixType: z.ZodType<IconPrefix> = z.any();
 
 // 2. Define your collection(s)
 const gamesCollection = defineCollection({
@@ -7,11 +11,17 @@ const gamesCollection = defineCollection({
   schema: z.object({
     title: z.string(),
     sortOrder: z.number(),
-    icon: z.string(),
+    icon: faIconNameType,
     body: z.array(z.string()),
-    tech: z.array(z.object({ icon: z.string().optional(), name: z.string() })),
+    tech: z.array(
+      z.object({ icon: faIconNameType.optional(), name: z.string() }),
+    ),
     links: z.array(
-      z.object({ url: z.string().url(), icon: z.string(), text: z.string() }),
+      z.object({
+        url: z.string().url(),
+        icon: faIconNameType,
+        text: z.string(),
+      }),
     ),
     badge: z.boolean().optional(),
     draft: z.boolean().optional(),
@@ -24,7 +34,8 @@ const linksCollection = defineCollection({
     text: z.string(),
     sortOrder: z.number(),
     url: z.string().url(),
-    icon: z.string(),
+    iconPrefix: faIconPrefixType,
+    icon: faIconNameType,
   }),
 });
 

@@ -1,0 +1,18 @@
+---
+const { link } = Astro.props;
+
+// Font Awesome
+import { library, icon } from "@fortawesome/fontawesome-svg-core";
+import { faPlayCircle, faCode } from "@fortawesome/free-solid-svg-icons";
+
+library.add(faPlayCircle, faCode);
+
+const linkIcon = icon({ prefix: "fas", iconName: link.icon });
+---
+
+<li class="list-group-item">
+  <a href={link.url} target="_blank">
+    <Fragment set:html={linkIcon.html} />
+    {link.text}
+  </a>
+</li>

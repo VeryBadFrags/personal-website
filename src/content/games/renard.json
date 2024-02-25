@@ -1,13 +1,13 @@
 {
   "title": "Renard",
-  "icon": "fas fa-paw",
+  "icon": "paw",
   "sortOrder": 7,
   "body": ["A prototype for a terminal-based puzzle-adventure game."],
-  "tech": [{ "icon": "fab fa-unity", "name": "Unity" }, { "name": "C#" }],
+  "tech": [{ "icon": "unity", "name": "Unity" }, { "name": "C#" }],
   "links": [
     {
       "url": "https://verybadfrags.itch.io/renard",
-      "icon": "fas fa-play-circle",
+      "icon": "play-circle",
       "text": "Play the demo on itch.io"
     }
   ]

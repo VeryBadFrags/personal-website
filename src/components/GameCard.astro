@@ -1,4 +1,7 @@
 ---
+import TechIcon from "./TechIcon.astro";
+import GameLink from "./GameLink.astro";
+
 import { Image } from "astro:assets";
 import type { CollectionEntry } from "astro:content";
 
@@ -7,13 +10,38 @@ interface Props {
 }
 
 const { game } = Astro.props;
+
+// Font Awesome
+import { library, icon } from "@fortawesome/fontawesome-svg-core";
+// TODO find a way to dynamically import based on the provided game.data.icon
+import {
+  faSnowflake,
+  faPhoneSlash,
+  faMask,
+  faPaw,
+  faHourglassHalf,
+  faUserSecret,
+  faCubes,
+} from "@fortawesome/free-solid-svg-icons";
+
+library.add(
+  faSnowflake,
+  faPhoneSlash,
+  faMask,
+  faPaw,
+  faHourglassHalf,
+  faUserSecret,
+  faCubes,
+);
+
+const gameIcon = icon({ prefix: "fas", iconName: game.data.icon });
 ---
 
 <div class="col mb-5">
   <div class="card shadow-sm h-100 p-2">
     <div class="card-header d-flex justify-content-between">
       <h3>
-        <i class={game.data.icon}></i>
+        <Fragment set:html={gameIcon.html} />
         {game.data.title}
       </h3>
       {
@@ -31,29 +59,15 @@ const { game } = Astro.props;
 
     <div class="card-body">
       <div class="card-text">
-        {game.data.body.map((bodyItem) => <p>{bodyItem}</p>)}
+        {game.data.body.map((gameBody) => <p>{gameBody}</p>)}
         <div>
-          {
-            game.data.tech.map((tech) => (
-              <span class="badge bg-info text-black mx-1">
-                <i class={tech.icon} /> {tech.name}
-              </span>
-            ))
-          }
+          {game.data.tech.map((tech) => <TechIcon tech={tech} />)}
         </div>
       </div>
     </div>
 
     <ul class="list-group list-group-flush">
-      {
-        game.data.links.map((link) => (
-          <li class="list-group-item">
-            <a href={link.url} target="_blank">
-              <i class={link.icon} /> {link.text}
-            </a>
-          </li>
-        ))
-      }
+      {game.data.links.map((link) => <GameLink link={link} />)}
     </ul>
   </div>
 </div>

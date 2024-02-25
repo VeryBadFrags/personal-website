@@ -1,0 +1,19 @@
+---
+const { tech } = Astro.props;
+
+// Font Awesome
+import { library, icon } from "@fortawesome/fontawesome-svg-core";
+import { faJs, faReact, faUnity } from "@fortawesome/free-brands-svg-icons";
+
+library.add(faJs, faReact, faUnity);
+
+let techIcon = null;
+if (tech.icon) {
+  techIcon = icon({ prefix: "fab", iconName: tech.icon });
+}
+---
+
+<span class="badge bg-info text-black mx-1">
+  {techIcon && <Fragment set:html={techIcon.html} />}
+  {tech.name}
+</span>

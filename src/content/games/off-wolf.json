@@ -1,15 +1,15 @@
 {
   "title": "Offline Werewolf",
-  "icon": "fas fa-mask",
+  "icon": "mask",
   "sortOrder": 6,
   "body": [
     "A server-free, standalone spin on the Mafia/Werewolf formula that can be played without an internet connection."
   ],
-  "tech": [{ "icon": "fab fa-js", "name": "JavaScript" }],
+  "tech": [{ "icon": "js", "name": "JavaScript" }],
   "links": [
     {
       "url": "https://offline-werewolf.verybadfrags.com",
-      "icon": "fas fa-play-circle",
+      "icon": "play-circle",
       "text": "Play the game"
     }
   ],
