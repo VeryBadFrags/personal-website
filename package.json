@@ -16,6 +16,7 @@
   "dependencies": {
     "@astrojs/check": "^0.5.4",
     "@astrojs/tailwind": "^5.1.0",
+    "@fontsource/fira-sans": "^5.0.18",
     "@fortawesome/fontawesome-svg-core": "^6.5.1",
     "@fortawesome/free-brands-svg-icons": "^6.5.1",
     "@fortawesome/free-solid-svg-icons": "^6.5.1",
