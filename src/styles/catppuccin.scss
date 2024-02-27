@@ -12,10 +12,17 @@ $info: $sky;
 $light: $text;
 $dark: $base;
 
-$card-cap-color: $sky;
+$body-bg: $base;
+$body-color: $text;
+$text-muted: $subtext1;
+$heading-color: $text;
+$border-color: $surface0;
+
+$card-cap-color: $text;
 $card-cap-bg: $mantle;
 $card-bg: $mantle;
 $card-color: $text;
+$card-border-color: $border-color;
 
 $component-active-bg: $overlay0;
 $list-group-color: $blue;
@@ -29,7 +36,6 @@ $list-group-hover-bg: $base;
 body {
   background-color: $base;
   color: $text;
-  font-family: "Atkinson Hyperlegible", sans-serif;
 }
 
 h1,
@@ -38,29 +44,6 @@ h3 {
   font-weight: 700;
   filter: drop-shadow(1px 1px 1px $mantle);
 }
-
-h1 > span {
-  background: linear-gradient(to right, $blue, $peach);
-  -webkit-background-clip: text;
-  background-clip: text;
-  color: transparent;
-}
-
-h2 {
-  color: $text;
-}
-
-h2 > span {
-  background-color: $text;
-  background: linear-gradient(to right, $text, $lavender);
-  -webkit-background-clip: text;
-  background-clip: text;
-  color: transparent;
-}
-
-// h3 {
-//   color: $peach;
-// }
 
 a {
   color: $blue;
@@ -79,6 +62,29 @@ a:visited {
   box-shadow: $box-shadow !important;
 }
 
+.list-group-item {
+  border-color: $border-color;
+}
+
 ul.list-group:hover {
   box-shadow: $box-shadow !important;
+}
+
+.card > ul.list-group:hover {
+  box-shadow: none !important;
+}
+
+.blue-peach-gradient {
+  background: linear-gradient(to right, $blue, $peach);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.text-gradient-subtle {
+  background-color: $text;
+  background: linear-gradient(to right, $text, $subtext1);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
 }

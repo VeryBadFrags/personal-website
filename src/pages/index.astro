@@ -27,11 +27,14 @@ const linkIcon = icon({ prefix: "fas", iconName: "link" });
 <Layout title="Loic Vourch - Software Engineer">
   <main class="container">
     <h1 class="mt-4 mb-5">
-      <span>Loic Vourch - Software Engineer</span>
+      <span class="blue-peach-gradient">Loic Vourch - Software Engineer</span>
     </h1>
 
     <section>
-      <h2 class="mb-4"><Fragment set:html={linkIcon.html} /> Links</h2>
+      <h2 class="mb-4">
+        <Fragment set:html={linkIcon.html} />
+        <span class="text-gradient-subtle">Links</span>
+      </h2>
       <ul class="list-group shadow-sm mb-5">
         {
           allLinks
@@ -44,7 +47,7 @@ const linkIcon = icon({ prefix: "fas", iconName: "link" });
     <section>
       <h2 class="mb-4">
         <Fragment set:html={gamepad.html} />
-        <span>Games</span>
+        <span class="text-gradient-subtle">Games</span>
       </h2>
       <div class="row row-cols-1 row-cols-md-2 row-cols-xxl-3">
         {

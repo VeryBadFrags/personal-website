@@ -42,7 +42,7 @@ const gameIcon = icon({ prefix: "fas", iconName: game.data.icon });
     <div class="card-header d-flex justify-content-between">
       <h3>
         <Fragment set:html={gameIcon.html} />
-        {game.data.title}
+        <span>{game.data.title}</span>
       </h3>
       {
         game.data.badge ? (
