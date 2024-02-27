@@ -10,9 +10,11 @@ library.add(faPlayCircle, faCode);
 const linkIcon = icon({ prefix: "fas", iconName: link.icon });
 ---
 
-<li class="list-group-item">
-  <a href={link.url} target="_blank">
-    <Fragment set:html={linkIcon.html} />
-    {link.text}
-  </a>
-</li>
+<a
+  href={link.url}
+  target="_blank"
+  class="list-group-item list-group-item-action"
+>
+  <Fragment set:html={linkIcon.html} />
+  {link.text}
+</a>
