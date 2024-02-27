@@ -12,10 +12,16 @@ $info: $sky;
 $light: $text;
 $dark: $base;
 
-$card-cap-bg: $mantle;
 $card-cap-color: $sky;
+$card-cap-bg: $mantle;
 $card-bg: $mantle;
+$card-color: $text;
+
+$component-active-bg: $overlay0;
+$list-group-color: $blue;
 $list-group-bg: $card-cap-bg;
+$list-group-action-hover-color: $lavender;
+$list-group-hover-bg: $base;
 
 // set changes
 @import "../../node_modules/bootstrap/scss/bootstrap";
@@ -23,7 +29,14 @@ $list-group-bg: $card-cap-bg;
 body {
   background-color: $base;
   color: $text;
-  font-family: 'Atkinson Hyperlegible', sans-serif;
+  font-family: "Atkinson Hyperlegible", sans-serif;
+}
+
+h1,
+h2,
+h3 {
+  font-weight: 700;
+  filter: drop-shadow(1px 1px 1px $mantle);
 }
 
 h1 > span {
@@ -31,12 +44,10 @@ h1 > span {
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
-  font-weight: 700;
 }
 
 h2 {
   color: $text;
-  font-weight: 700;
 }
 
 h2 > span {
@@ -47,18 +58,16 @@ h2 > span {
   color: transparent;
 }
 
-h3 {
-  // color: $peach;
-  text-shadow: 1px 1px 2px $mantle;
-  font-weight: 700;
-}
+// h3 {
+//   color: $peach;
+// }
 
 a {
   color: $blue;
 }
 
 a:hover {
-  color: $sapphire;
+  color: $lavender !important;
 }
 
 a:visited {
@@ -66,7 +75,7 @@ a:visited {
 }
 
 .card:hover {
-  border-color: $surface1 !important;
+  // border-color: $surface1 !important;
   box-shadow: $box-shadow !important;
 }
 
