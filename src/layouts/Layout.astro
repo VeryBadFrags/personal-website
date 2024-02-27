@@ -1,12 +1,13 @@
 ---
-import '@fontsource/fira-sans';
-import '@fontsource/fira-sans/500.css';
+import '@fontsource/atkinson-hyperlegible';
+import '@fontsource/atkinson-hyperlegible/700.css';
 
 interface Props {
   title: string;
 }
 
 const { title } = Astro.props;
+const description = "Software engineer in the Los Angeles area";
 ---
 
 <!doctype html>
@@ -16,20 +17,20 @@ const { title } = Astro.props;
     <meta name="description" content="Astro description" />
     <meta name="viewport" content="width=device-width" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-    <meta name="generator" content={Astro.generator} />
-    <title>{title}</title>
-
-    <link rel="mask-icon" href="/favicon.svg" color="#9580ff" />
-
+    <link rel="mask-icon" href="/favicon.svg" color="#cad3f5" />
+    <link rel="apple-touch-icon" href="/favicon.svg" />
     <meta name="theme-color" content="#24273a" />
-    <meta
-      name="description"
-      content="Software engineer in the Los Angeles area"
-    />
-    <link
-      rel="alternate icon"
-      href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>👨‍💻</text></svg>"
-    />
+    <meta name="generator" content={Astro.generator} />
+
+    <title>{title}</title>
+    <meta name="description" content={description} />
+    <meta property="og:site_name" content="Loic Vourch">
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://loic.vour.ch" />
+
+    <meta property="og:image" content="/favicon.svg" />
   </head>
   <body>
     <slot />

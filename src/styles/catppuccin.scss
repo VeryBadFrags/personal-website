@@ -23,7 +23,7 @@ $list-group-bg: $card-cap-bg;
 body {
   background-color: $base;
   color: $text;
-  font-family: "Fira Sans", sans-serif;
+  font-family: 'Atkinson Hyperlegible', sans-serif;
 }
 
 h1 > span {
@@ -31,10 +31,12 @@ h1 > span {
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
+  font-weight: 700;
 }
 
 h2 {
   color: $text;
+  font-weight: 700;
 }
 
 h2 > span {
@@ -48,6 +50,7 @@ h2 > span {
 h3 {
   // color: $peach;
   text-shadow: 1px 1px 2px $mantle;
+  font-weight: 700;
 }
 
 a {
