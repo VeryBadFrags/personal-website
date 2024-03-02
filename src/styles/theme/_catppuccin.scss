@@ -1,4 +1,4 @@
-@import "../../node_modules/@catppuccin/palette/scss/macchiato";
+@import "/node_modules/@catppuccin/palette/scss/macchiato";
 // https://catppuccin.ryanccn.dev/palette
 
 // Bootstrap override
@@ -31,18 +31,11 @@ $list-group-action-hover-color: $lavender;
 $list-group-hover-bg: $base;
 
 // set changes
-@import "../../node_modules/bootstrap/scss/bootstrap";
+@import "/node_modules/bootstrap/scss/bootstrap";
 
 body {
   background-color: $base;
   color: $text;
-}
-
-h1,
-h2,
-h3 {
-  font-weight: 700;
-  filter: drop-shadow(1px 1px 1px $mantle);
 }
 
 a {
@@ -57,34 +50,6 @@ a:visited {
   color: $mauve;
 }
 
-.card:hover {
-  // border-color: $surface1 !important;
-  box-shadow: $box-shadow !important;
-}
-
 .list-group-item {
   border-color: $border-color;
-}
-
-ul.list-group:hover {
-  box-shadow: $box-shadow !important;
-}
-
-.card > ul.list-group:hover {
-  box-shadow: none !important;
-}
-
-.blue-peach-gradient {
-  background: linear-gradient(to right, $blue, $peach);
-  -webkit-background-clip: text;
-  background-clip: text;
-  color: transparent;
-}
-
-.text-gradient-subtle {
-  background-color: $text;
-  background: linear-gradient(to right, $text, $subtext1);
-  -webkit-background-clip: text;
-  background-clip: text;
-  color: transparent;
 }

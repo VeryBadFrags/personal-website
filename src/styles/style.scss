@@ -1,0 +1,35 @@
+@import "theme/catppuccin";
+
+h1,
+h2,
+h3 {
+  font-weight: 700;
+  filter: drop-shadow(1px 1px 1px $mantle);
+}
+
+.card:hover {
+  box-shadow: $box-shadow !important;
+}
+
+ul.list-group:hover {
+  box-shadow: $box-shadow !important;
+}
+
+.card > ul.list-group:hover {
+  box-shadow: none !important;
+}
+
+.blue-peach-gradient {
+  background: linear-gradient(to right, $blue, $peach);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.text-gradient-subtle {
+  background-color: $text;
+  background: linear-gradient(to right, $text, $subtext1);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
