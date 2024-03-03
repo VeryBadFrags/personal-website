@@ -1,24 +1,33 @@
 ---
 import qrCodeImage from "../images/qr.svg";
 
+// Font Awesome
 import { library, icon } from "@fortawesome/fontawesome-svg-core";
 import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
-
 library.add(faEnvelope);
-
 const envelopeIcon = icon({ prefix: "fas", iconName: "envelope" });
+
+// Email badge
+import { makeBadge } from "badge-maker";
+const badgeFormat = {
+  label: "email",
+  message: "contact@vour.ch",
+  labelColor: "#494d64",
+  color: "#91d7e3",
+};
+const emailBadgeSvg = makeBadge(badgeFormat);
 ---
 
-<section class="row row-cols-1 row-cols-md-2 row-cols-xxl-3 mt-5">
-  <div class="col mb-5">
+<section class="row row-cols-1 row-cols-md-2 row-cols-xxl-3 gy-5">
+  <div class="col">
     <h2 class="mb-3">
       <Fragment set:html={envelopeIcon.html} />
       <span class="text-gradient-subtle">Contact</span>
     </h2>
-    <a href="mailto:contact@vour.ch">contact@vour.ch</a>
+    <a href="mailto:contact@vour.ch"><Fragment set:html={emailBadgeSvg} /></a>
   </div>
 
-  <div class="col mb-5">
+  <div class="col">
     <figure>
       <img
         src={qrCodeImage.src}
