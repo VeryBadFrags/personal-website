@@ -9,8 +9,8 @@ library.add(faEnvelope);
 const envelopeIcon = icon({ prefix: "fas", iconName: "envelope" });
 ---
 
-<section class="row row-cols-1 row-cols-md-2 row-cols-xxl-3 mt-5">
-  <div class="col mb-5">
+<section class="row row-cols-1 row-cols-md-2 row-cols-xxl-3 gy-5">
+  <div class="col">
     <h2 class="mb-3">
       <Fragment set:html={envelopeIcon.html} />
       <span class="text-gradient-subtle">Contact</span>
@@ -18,7 +18,7 @@ const envelopeIcon = icon({ prefix: "fas", iconName: "envelope" });
     <a href="mailto:contact@vour.ch">contact@vour.ch</a>
   </div>
 
-  <div class="col mb-5">
+  <div class="col">
     <figure>
       <img
         src={qrCodeImage.src}
