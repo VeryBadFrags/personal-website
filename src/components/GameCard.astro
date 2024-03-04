@@ -53,11 +53,7 @@ const licenseBadge = makeBadge(badgeFormat);
         <Fragment set:html={gameIcon.html} />
         <span>{game.data.title}</span>
       </h3>
-      {
-        game.data.badge ? (
-          <Fragment set:html={licenseBadge}/>
-        ) : null
-      }
+      {game.data.badge ? <Fragment set:html={licenseBadge} /> : null}
     </div>
 
     <div class="card-body">
