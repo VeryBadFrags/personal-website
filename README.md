@@ -38,5 +38,6 @@ Feel free to re-use this template.
 
 - CSS: [Bootstrap](https://getbootstrap.com)
 - Theme: [Catppuccin 🌺 Macchiato](https://github.com/catppuccin/palette/blob/HEAD/docs/sass.md)
+- [Badge Maker](https://www.npmjs.com/package/badge-maker)
 - Favicon: [UXWing](https://uxwing.com/)
 - [GitHub Corners](https://tholman.com/github-corners/)
