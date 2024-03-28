@@ -14,22 +14,22 @@
     "qrcode": "qrcode -o src/images/qr.svg https://loic.vour.ch --qzone 2"
   },
   "dependencies": {
-    "@astrojs/check": "^0.5.4",
-    "@fontsource/atkinson-hyperlegible": "^5.0.18",
+    "@astrojs/check": "^0.5.10",
+    "@fontsource/atkinson-hyperlegible": "^5.0.19",
     "@fortawesome/fontawesome-svg-core": "^6.5.1",
     "@fortawesome/free-brands-svg-icons": "^6.5.1",
     "@fortawesome/free-solid-svg-icons": "^6.5.1",
-    "astro": "^4.4.0",
+    "astro": "^4.5.10",
     "badge-maker": "^3.3.1",
-    "bootstrap": "^5.3.2",
+    "bootstrap": "^5.3.3",
     "plausible-tracker": "^0.3.8",
-    "typescript": "^5.3.3"
+    "typescript": "^5.4.3"
   },
   "devDependencies": {
-    "@catppuccin/palette": "^1.1.0",
+    "@catppuccin/palette": "^1.1.1",
     "prettier": "^3.2.5",
     "prettier-plugin-astro": "^0.13.0",
     "qrcode": "^1.5.3",
-    "sass": "^1.71.0"
+    "sass": "^1.72.0"
   }
 }
