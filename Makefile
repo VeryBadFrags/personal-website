@@ -20,7 +20,7 @@ dev: node_modules
 	pnpm run dev
 
 .PHONY: format
-format:
+format: node_modules
 	pnpm run format
 
 .PHONY: clean
