@@ -8,7 +8,7 @@
   "tech": [{ "icon": "react", "name": "React" }, { "name": "Socket.IO" }],
   "links": [
     {
-      "url": "https://spy.verybadfrags.com",
+      "url": "https://spyfall.verybadfrags.com",
       "icon": "play-circle",
       "text": "Play the game"
     },
