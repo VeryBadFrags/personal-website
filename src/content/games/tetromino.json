@@ -6,7 +6,7 @@
   "tech": [{ "icon": "js", "name": "Typescript" }],
   "links": [
     {
-      "url": "https://blocks.verybadfrags.com",
+      "url": "https://tetromino.verybadfrags.com",
       "icon": "play-circle",
       "text": "Play the game"
     },
