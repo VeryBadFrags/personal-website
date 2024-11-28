@@ -4,11 +4,12 @@ h1,
 h2,
 h3 {
   font-weight: 700;
-  filter: drop-shadow(1px 1px 1px $mantle);
+  filter: drop-shadow(2px 2px 2px $crust);
 }
 
 .card:hover {
   box-shadow: $box-shadow !important;
+  border-color: $surface2;
 }
 
 ul.list-group:hover {
@@ -27,8 +28,7 @@ ul.list-group:hover {
 }
 
 .text-gradient-subtle {
-  background-color: $text;
-  background: linear-gradient(to right, $text, $subtext1);
+  background: $text linear-gradient(to right, $text, $subtext1);
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
