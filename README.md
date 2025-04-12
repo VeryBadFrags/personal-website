@@ -5,27 +5,25 @@
 
 A static website built with [Astro](https://astro.build/).
 
-## Build
+## Setup
 
-- Install [Node](https://nodejs.org/)
-
-### With [pnpm](https://pnpm.io)
-
-```sh
-make build
-```
-
-### With npm
+- Get Node: <https://nodejs.org/en/download>
+- Enable Corepack:
 
 ```sh
-npm i
-npm run build
+corepack enable
 ```
 
 ## Local development
 
 ```sh
 make dev
+```
+
+## Build
+
+```sh
+make build
 ```
 
 ## License
