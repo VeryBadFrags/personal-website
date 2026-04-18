@@ -67,20 +67,6 @@ const linkIcon = icon({ prefix: "fas", iconName: "link" });
   <GitHubFork />
 </Layout>
 
-<script>
-  // Astro will bundle and process this automatically
-  // import "bootstrap/dist/js/bootstrap.bundle.min.js";
-
-  import Plausible from "plausible-tracker";
-  const plausible = Plausible({
-    domain: "loic.vour.ch",
-    apiHost: "/ps",
-    hashMode: false,
-  });
-  plausible.trackPageview();
-  plausible.enableAutoOutboundTracking();
-</script>
-
 <style>
   body {
     font-family: "Atkinson Hyperlegible", sans-serif;
