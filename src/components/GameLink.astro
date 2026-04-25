@@ -1,5 +1,5 @@
 ---
-const { link } = Astro.props;
+const { link, gameName } = Astro.props;
 
 // Font Awesome
 import { library, icon } from "@fortawesome/fontawesome-svg-core";
@@ -14,6 +14,8 @@ const linkIcon = icon({ prefix: "fas", iconName: link.icon });
   href={link.url}
   target="_blank"
   class="list-group-item list-group-item-action"
+  data-umami-event="link_clicked"
+  data-umami-event-label={gameName}
 >
   <Fragment set:html={linkIcon.html} />
   {link.text}

@@ -27,6 +27,8 @@ const linkIcon = icon({
   href={link.data.url}
   target="_blank"
   class="list-group-item list-group-item-action"
+  data-umami-event="link_clicked"
+  data-umami-event-label={link.data.text}
   ><Fragment set:html={linkIcon.html} /> {link.data.text}</a
 >
 <style is:global>
