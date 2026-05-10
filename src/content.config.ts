@@ -1,7 +1,7 @@
 import type { IconName, IconPrefix } from "@fortawesome/fontawesome-svg-core";
 import { defineCollection } from "astro:content";
 import { glob } from "astro/loaders";
-import { z, type ZodType } from "astro:schema";
+import { z, type ZodType } from "astro/zod";
 
 const faIconNameType: ZodType<IconName> = z.any();
 const faIconPrefixType: ZodType<IconPrefix> = z.any();
@@ -18,7 +18,7 @@ const gamesCollection = defineCollection({
     ),
     links: z.array(
       z.object({
-        url: z.string().url(),
+        url: z.url(),
         icon: faIconNameType,
         text: z.string(),
       }),
@@ -33,7 +33,7 @@ const linksCollection = defineCollection({
   schema: z.object({
     text: z.string(),
     sortOrder: z.number(),
-    url: z.string().url(),
+    url: z.url(),
     iconPrefix: faIconPrefixType,
     icon: faIconNameType,
   }),
