@@ -1,13 +1,13 @@
-// 1. Import utilities from `astro:content`
 import type { IconName, IconPrefix } from "@fortawesome/fontawesome-svg-core";
-import { z, defineCollection } from "astro:content";
+import { defineCollection } from "astro:content";
+import { glob } from "astro/loaders";
+import { z, type ZodType } from "astro:schema";
 
-const faIconNameType: z.ZodType<IconName> = z.any();
-const faIconPrefixType: z.ZodType<IconPrefix> = z.any();
+const faIconNameType: ZodType<IconName> = z.any();
+const faIconPrefixType: ZodType<IconPrefix> = z.any();
 
-// 2. Define your collection(s)
 const gamesCollection = defineCollection({
-  type: "data",
+  loader: glob({ pattern: "**/*.json", base: "./src/content/games" }),
   schema: z.object({
     title: z.string(),
     sortOrder: z.number(),
@@ -29,7 +29,7 @@ const gamesCollection = defineCollection({
 });
 
 const linksCollection = defineCollection({
-  type: "data",
+  loader: glob({ pattern: "**/*.json", base: "./src/content/links" }),
   schema: z.object({
     text: z.string(),
     sortOrder: z.number(),
@@ -39,8 +39,6 @@ const linksCollection = defineCollection({
   }),
 });
 
-// 3. Export a single `collections` object to register your collection(s)
-//    This key should match your collection directory name in "src/content"
 export const collections = {
   games: gamesCollection,
   links: linksCollection,
