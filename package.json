@@ -7,15 +7,17 @@
   "scripts": {
     "dev": "astro dev",
     "start": "astro dev",
-    "build": "astro check && astro build",
+    "build": "astro build",
     "preview": "astro preview",
     "astro": "astro",
-    "check": "astro check",
-    "ci": "prettier --check .",
+    "astro:check": "astro check",
     "format": "prettier --write .",
     "format:check": "prettier --check .",
+    "test": "vitest run",
+    "ci": "pnpm run format:check && pnpm run test && pnpm run astro:check",
     "clean": "rm -rf dist/",
-    "qrcode": "qrcode -o src/images/qr.svg https://loic.vour.ch --qzone 2"
+    "qrcode": "qrcode -o src/images/qr.svg https://loic.vour.ch --qzone 2",
+    "prepare": "husky"
   },
   "dependencies": {
     "@astrojs/check": "^0.9.10",
@@ -30,9 +32,15 @@
   },
   "devDependencies": {
     "@catppuccin/palette": "^1.8.0",
+    "husky": "^9.1.7",
+    "lint-staged": "^17.3.0",
     "prettier": "^3.9.6",
     "prettier-plugin-astro": "^0.14.1",
     "qrcode": "^1.5.4",
-    "sass": "^1.102.0"
+    "sass": "^1.102.0",
+    "vitest": "^4.1.10"
+  },
+  "lint-staged": {
+    "*": "prettier --write --ignore-unknown"
   }
 }

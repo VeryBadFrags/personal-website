@@ -1,6 +1,7 @@
 # Personal website
 
 [![License: MIT](https://img.shields.io/badge/license-MIT-green)](LICENSE.txt)
+[![CI](https://github.com/VeryBadFrags/personal-website/actions/workflows/ci.yml/badge.svg)](https://github.com/VeryBadFrags/personal-website/actions/workflows/ci.yml)
 [![Netlify Status](https://api.netlify.com/api/v1/badges/9831630f-f8ce-4486-a2d7-eaa2d591f0ef/deploy-status)](https://app.netlify.com/sites/ecstatic-bell-8dfa14/deploys)
 
 A static website built with [Astro](https://astro.build/).
