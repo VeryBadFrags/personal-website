@@ -10,7 +10,7 @@ importers:
     dependencies:
       '@astrojs/check':
         specifier: ^0.9.10
-        version: 0.9.10(prettier-plugin-astro@0.13.0)(prettier@3.9.6)(typescript@5.9.3)
+        version: 0.9.10(prettier-plugin-astro@0.14.1)(prettier@3.9.6)(typescript@5.9.3)
       '@fontsource/atkinson-hyperlegible':
         specifier: ^5.3.0
         version: 5.3.0
@@ -43,8 +43,8 @@ importers:
         specifier: ^3.9.6
         version: 3.9.6
       prettier-plugin-astro:
-        specifier: ^0.13.0
-        version: 0.13.0
+        specifier: ^0.14.1
+        version: 0.14.1
       qrcode:
         specifier: ^1.5.4
         version: 1.5.4
@@ -124,9 +124,6 @@ packages:
   '@astrojs/compiler-rs@0.3.2':
     resolution: {integrity: sha512-xlx/T7JovIKduu4ucbTQUxQ5+Q8wxkHxhLjnZk3VlJbhbQ9RLvvuDk1p2YYFYFQ5y14dVm3FGGO4isQXa4F+Tg==}
     engines: {node: '>=22.12.0'}
-
-  '@astrojs/compiler@1.8.2':
-    resolution: {integrity: sha512-o/ObKgtMzl8SlpIdzaxFnt7SATKPxu4oIP/1NL+HDJRzxfJcAkOTAb/ZKMRyULbz4q+1t2/DAebs2Z1QairkZw==}
 
   '@astrojs/compiler@2.13.1':
     resolution: {integrity: sha512-f3FN83d2G/v32ipNClRKgYv30onQlMZX1vCeZMjPsMMPl1mDpmbl0+N5BYo4S/ofzqJyS5hvwacEo0CCVDn/Qg==}
@@ -1527,8 +1524,8 @@ packages:
     resolution: {integrity: sha512-DTPx3RWSSnWyzLxQnlH0rJP+EW5ekl16ZU4/psbIhA0e53kJfdgaN5vKM+xP7yJtXVu+nfdVFmlgFDEKAe4Pyw==}
     engines: {node: ^10 || ^12 || >=14}
 
-  prettier-plugin-astro@0.13.0:
-    resolution: {integrity: sha512-5HrJNnPmZqTUNoA97zn4gNQv9BgVhv+et03314WpQ9H9N8m2L9OSV798olwmG2YLXPl1iSstlJCR1zB3x5xG4g==}
+  prettier-plugin-astro@0.14.1:
+    resolution: {integrity: sha512-RiBETaaP9veVstE4vUwSIcdATj6dKmXljouXc/DDNwBSPTp8FRkLGDSGFClKsAFeeg+13SB0Z1JZvbD76bigJw==}
     engines: {node: ^14.15.0 || >=16.0.0}
 
   prettier@3.9.6:
@@ -2039,9 +2036,9 @@ packages:
 
 snapshots:
 
-  '@astrojs/check@0.9.10(prettier-plugin-astro@0.13.0)(prettier@3.9.6)(typescript@5.9.3)':
+  '@astrojs/check@0.9.10(prettier-plugin-astro@0.14.1)(prettier@3.9.6)(typescript@5.9.3)':
     dependencies:
-      '@astrojs/language-server': 2.16.13(prettier-plugin-astro@0.13.0)(prettier@3.9.6)(typescript@5.9.3)
+      '@astrojs/language-server': 2.16.13(prettier-plugin-astro@0.14.1)(prettier@3.9.6)(typescript@5.9.3)
       chokidar: 4.0.3
       kleur: 4.1.5
       typescript: 5.9.3
@@ -2104,8 +2101,6 @@ snapshots:
       - '@emnapi/core'
       - '@emnapi/runtime'
 
-  '@astrojs/compiler@1.8.2': {}
-
   '@astrojs/compiler@2.13.1': {}
 
   '@astrojs/internal-helpers@0.10.2':
@@ -2119,7 +2114,7 @@ snapshots:
       smol-toml: 1.7.1
       unified: 11.0.5
 
-  '@astrojs/language-server@2.16.13(prettier-plugin-astro@0.13.0)(prettier@3.9.6)(typescript@5.9.3)':
+  '@astrojs/language-server@2.16.13(prettier-plugin-astro@0.14.1)(prettier@3.9.6)(typescript@5.9.3)':
     dependencies:
       '@astrojs/compiler': 2.13.1
       '@astrojs/yaml2ts': 0.2.4
@@ -2141,7 +2136,7 @@ snapshots:
       vscode-uri: 3.1.0
     optionalDependencies:
       prettier: 3.9.6
-      prettier-plugin-astro: 0.13.0
+      prettier-plugin-astro: 0.14.1
     transitivePeerDependencies:
       - typescript
 
@@ -3409,9 +3404,9 @@ snapshots:
       picocolors: 1.1.1
       source-map-js: 1.2.1
 
-  prettier-plugin-astro@0.13.0:
+  prettier-plugin-astro@0.14.1:
     dependencies:
-      '@astrojs/compiler': 1.8.2
+      '@astrojs/compiler': 2.13.1
       prettier: 3.9.6
       sass-formatter: 0.7.9
 
