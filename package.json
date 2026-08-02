@@ -13,8 +13,8 @@
     "astro:check": "astro check",
     "format": "prettier --write .",
     "format:check": "prettier --check .",
-    "test": "echo No tests implemented",
-    "ci": "pnpm run format:check && pnpm run astro:check",
+    "test": "vitest run",
+    "ci": "pnpm run format:check && pnpm run test && pnpm run astro:check",
     "clean": "rm -rf dist/",
     "qrcode": "qrcode -o src/images/qr.svg https://loic.vour.ch --qzone 2",
     "prepare": "husky"
@@ -36,6 +36,7 @@
     "prettier": "^3.9.6",
     "prettier-plugin-astro": "^0.14.1",
     "qrcode": "^1.5.4",
-    "sass": "^1.102.0"
+    "sass": "^1.102.0",
+    "vitest": "^4.1.10"
   }
 }

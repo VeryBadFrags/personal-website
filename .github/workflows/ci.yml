@@ -22,11 +22,17 @@ jobs:
           run_install: false
           cache: true
 
-      - name: Run pnpm ci
+      - name: Install dependencies
         run: pnpm ci
 
-      - name: Run checks
-        run: pnpm run ci
+      - name: Check formatting
+        run: pnpm run format:check
+
+      - name: Run tests
+        run: pnpm run test
+
+      - name: Check Astro types
+        run: pnpm run astro:check
 
       - name: Run Astro build
         run: pnpm run build
