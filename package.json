@@ -18,12 +18,12 @@
     "qrcode": "qrcode -o src/images/qr.svg https://loic.vour.ch --qzone 2"
   },
   "dependencies": {
-    "@astrojs/check": "^0.9.9",
+    "@astrojs/check": "^0.9.10",
     "@fontsource/atkinson-hyperlegible": "^5.2.8",
     "@fortawesome/fontawesome-svg-core": "^6.7.2",
     "@fortawesome/free-brands-svg-icons": "^6.7.2",
     "@fortawesome/free-solid-svg-icons": "^6.7.2",
-    "astro": "^6.2.1",
+    "astro": "^7.1.6",
     "badge-maker": "^3.3.1",
     "bootstrap": "^5.3.8",
     "typescript": "^5.9.3"
