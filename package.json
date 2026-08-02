@@ -3,7 +3,7 @@
   "type": "module",
   "version": "0.0.1",
   "private": true,
-  "packageManager": "pnpm@11.0.9+sha512.34ce82e6780233cf9cad8685029a8f81d2e06196c5a9bad98879f7424940c6817c4e4524fb7d38b8553ceed48b9758b8ebaf1abd3600c232c4c8cf7366086f38",
+  "packageManager": "pnpm@11.18.0+sha512.33d83c77da82f49fba836925c6f1b841181ec3132b670639bd012f7075f5c7cf634c5f870147c19aae7478fac01df09d8892e880454896edd23ee9b33757563c",
   "scripts": {
     "dev": "astro dev",
     "start": "astro dev",
@@ -18,21 +18,21 @@
     "qrcode": "qrcode -o src/images/qr.svg https://loic.vour.ch --qzone 2"
   },
   "dependencies": {
-    "@astrojs/check": "^0.9.9",
-    "@fontsource/atkinson-hyperlegible": "^5.2.8",
-    "@fortawesome/fontawesome-svg-core": "^6.7.2",
-    "@fortawesome/free-brands-svg-icons": "^6.7.2",
-    "@fortawesome/free-solid-svg-icons": "^6.7.2",
-    "astro": "^6.2.1",
+    "@astrojs/check": "^0.9.10",
+    "@fontsource/atkinson-hyperlegible": "^5.3.0",
+    "@fortawesome/fontawesome-svg-core": "^7.3.1",
+    "@fortawesome/free-brands-svg-icons": "^7.3.1",
+    "@fortawesome/free-solid-svg-icons": "^7.3.1",
+    "astro": "^7.1.6",
     "badge-maker": "^3.3.1",
     "bootstrap": "^5.3.8",
     "typescript": "^5.9.3"
   },
   "devDependencies": {
     "@catppuccin/palette": "^1.8.0",
-    "prettier": "^3.8.3",
-    "prettier-plugin-astro": "^0.13.0",
+    "prettier": "^3.9.6",
+    "prettier-plugin-astro": "^0.14.1",
     "qrcode": "^1.5.4",
-    "sass": "^1.99.0"
+    "sass": "^1.102.0"
   }
 }

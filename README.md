@@ -20,10 +20,10 @@ corepack enable
 make dev
 ```
 
-## Build
+## Upgrade Astro
 
 ```sh
-make build
+pnpm dlx @astrojs/upgrade
 ```
 
 ## License

@@ -4,7 +4,7 @@ MISE_NODE_COREPACK = true
 
 [tasks.dev]
 description = 'Calls your dev script in `package.json`'
-run = 'pnpm run dev -- --open'
+run = 'pnpm run dev --open'
 depends = ['pnpm-install']
 
 [tasks.pnpm-install]

@@ -7,7 +7,10 @@ import { faPlayCircle, faCode } from "@fortawesome/free-solid-svg-icons";
 
 library.add(faPlayCircle, faCode);
 
-const linkIcon = icon({ prefix: "fas", iconName: link.icon });
+const linkIcon = icon(
+  { prefix: "fas", iconName: link.icon },
+  { classes: ["me-1"] },
+);
 ---
 
 <a

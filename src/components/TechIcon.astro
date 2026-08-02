@@ -9,7 +9,10 @@ library.add(faJs, faReact, faUnity);
 
 let techIcon = null;
 if (tech.icon) {
-  techIcon = icon({ prefix: "fab", iconName: tech.icon });
+  techIcon = icon(
+    { prefix: "fab", iconName: tech.icon },
+    { classes: ["me-1"] },
+  );
 }
 ---
 

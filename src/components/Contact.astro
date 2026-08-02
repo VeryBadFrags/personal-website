@@ -5,7 +5,10 @@ import qrCodeImage from "../images/qr.svg";
 import { library, icon } from "@fortawesome/fontawesome-svg-core";
 import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 library.add(faEnvelope);
-const envelopeIcon = icon({ prefix: "fas", iconName: "envelope" });
+const envelopeIcon = icon(
+  { prefix: "fas", iconName: "envelope" },
+  { classes: ["me-1"] },
+);
 
 // Email badge
 import { makeBadge } from "badge-maker";
