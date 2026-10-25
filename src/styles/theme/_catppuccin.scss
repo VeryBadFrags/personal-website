@@ -1,4 +1,4 @@
-@import "/node_modules/@catppuccin/palette/scss/macchiato";
+@import "@catppuccin/palette/scss/macchiato";
 // https://catppuccin.ryanccn.dev/palette
 
 // Bootstrap override
@@ -34,7 +34,7 @@ $link-color: $blue;
 $link-hover-color: $lavender;
 
 // set changes
-@import "/node_modules/bootstrap/scss/bootstrap";
+@import "bootstrap/scss/bootstrap";
 
 body {
   background-color: $base;
