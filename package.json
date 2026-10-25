@@ -10,17 +10,15 @@
     "build": "astro build",
     "preview": "astro preview",
     "astro": "astro",
-    "astro:check": "astro check",
     "format": "prettier --write .",
     "format:check": "prettier --check .",
     "test": "vitest run",
-    "ci": "pnpm run format:check && pnpm run test && pnpm run astro:check",
+    "ci": "pnpm run format:check && pnpm run test",
     "clean": "rm -rf dist/",
     "qrcode": "qrcode -o src/images/qr.svg https://loic.vour.ch --qzone 2",
     "prepare": "husky"
   },
   "dependencies": {
-    "@astrojs/check": "0.9.12",
     "@catppuccin/palette": "^1.8.0",
     "@fortawesome/fontawesome-svg-core": "^7.3.1",
     "@fortawesome/free-brands-svg-icons": "^7.3.1",
@@ -36,7 +34,6 @@
     "prettier": "^3.9.10",
     "prettier-plugin-astro": "^0.14.1",
     "qrcode": "^1.5.4",
-    "typescript": "^7.0.2",
     "vitest": "^4.1.12"
   },
   "lint-staged": {

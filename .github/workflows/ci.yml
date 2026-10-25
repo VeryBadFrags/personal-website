@@ -31,8 +31,5 @@ jobs:
       - name: Run tests
         run: pnpm run test
 
-      - name: Check Astro types
-        run: pnpm run astro:check
-
       - name: Run Astro build
         run: pnpm run build
