@@ -1,6 +1,5 @@
 ---
-import "@fontsource/atkinson-hyperlegible";
-import "@fontsource/atkinson-hyperlegible/700.css";
+import { Font } from "astro:assets";
 
 interface Props {
   title: string;
@@ -13,6 +12,7 @@ const description = "Software engineer in the Los Angeles area";
 <!doctype html>
 <html lang="en" data-bs-theme="dark">
   <head>
+    <Font cssVariable="--font-atkinson" />
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
