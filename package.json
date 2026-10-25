@@ -13,7 +13,7 @@
     "format": "prettier --write .",
     "format:check": "prettier --check .",
     "test": "vitest run",
-    "ci": "pnpm run format:check && pnpm run test",
+    "ci": "pnpm run format:check && pnpm run test && pnpm run build",
     "clean": "rm -rf dist/",
     "qrcode": "qrcode -o src/images/qr.svg https://loic.vour.ch --qzone 2",
     "prepare": "husky"
