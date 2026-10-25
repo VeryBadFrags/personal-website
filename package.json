@@ -33,12 +33,12 @@
   "devDependencies": {
     "@catppuccin/palette": "^1.8.0",
     "husky": "^9.1.7",
-    "lint-staged": "^17.3.0",
-    "prettier": "^3.9.6",
+    "lint-staged": "^17.6.0",
+    "prettier": "^3.9.10",
     "prettier-plugin-astro": "^0.14.1",
     "qrcode": "^1.5.4",
-    "sass": "^1.102.0",
-    "vitest": "^4.1.10"
+    "sass": "^1.106.1",
+    "vitest": "^4.1.12"
   },
   "lint-staged": {
     "*": "prettier --write --ignore-unknown"
