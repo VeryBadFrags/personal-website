@@ -13,7 +13,8 @@
     "format": "prettier --write .",
     "format:check": "prettier --check .",
     "test": "vitest run",
-    "ci": "pnpm run format:check && pnpm run test && pnpm run build",
+    "astro:check": "astro check",
+    "ci": "pnpm run format:check && pnpm run test && pnpm run astro:check && pnpm run build",
     "clean": "rm -rf dist/",
     "qrcode": "qrcode -o src/images/qr.svg https://loic.vour.ch --qzone 2",
     "prepare": "husky"
@@ -29,6 +30,7 @@
     "sass": "^1.106.1"
   },
   "devDependencies": {
+    "@astrojs/check": "^0.9.12",
     "husky": "^9.1.7",
     "lint-staged": "^17.6.0",
     "prettier": "^3.9.10",
