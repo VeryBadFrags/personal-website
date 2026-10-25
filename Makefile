@@ -27,6 +27,10 @@ format: node_modules
 clean:
 	pnpm run clean
 
+.PHONY: astro-upgrade
+astro-upgrade:
+	pnpm dlx @astrojs/upgrade
+
 # Install dependencies if 'node_modules' is missing
 node_modules: pnpm-lock.yaml
 	pnpm install
