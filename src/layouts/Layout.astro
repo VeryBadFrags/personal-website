@@ -18,6 +18,7 @@ const description = "Software engineer in the Los Angeles area";
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
     <link rel="mask-icon" href="/favicon.svg" color="#cad3f5" />
+    <link rel="canonical" href={Astro.url.href} />
     <meta name="theme-color" content="#24273a" />
     <meta name="generator" content={Astro.generator} />
 
@@ -27,9 +28,11 @@ const description = "Software engineer in the Los Angeles area";
     <meta property="og:title" content={title} />
     <meta property="og:description" content={description} />
     <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://loic.vour.ch" />
-
-    <meta property="og:image" content="/favicon.svg" />
+    <meta property="og:url" content={Astro.url.href} />
+    <meta
+      property="og:image"
+      content={new URL("/apple-touch-icon.png", Astro.site)}
+    />
 
     <script
       is:inline

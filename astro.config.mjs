@@ -2,6 +2,7 @@ import { defineConfig, fontProviders } from "astro/config";
 
 // https://astro.build/config
 export default defineConfig({
+  site: "https://loic.vour.ch",
   output: "static",
   vite: {
     css: {
